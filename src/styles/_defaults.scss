@@ -1,0 +1,108 @@
+* { box-sizing: border-box; }
+
+body, html {
+    background: $color_2 !important;
+    font-family: $font-name, sans-serif !important;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden !important;
+    // cursor: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    display: block;
+}
+
+::selection { background-color: rgba(255, 2, 2, 0.5); }
+
+::-webkit-scrollbar {
+    display: none !important;
+}
+
+picture {
+    height: 100%;
+    width: 100%;
+    display: block;
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    object-fit: cover;
+    background-size: cover;
+}
+
+section {
+    display: flex;
+    position: relative;
+    // flex-wrap: wrap;
+    // flex-direction: row;
+    // padding-top: 20px;
+    // padding-bottom: 20px;
+    width: 100%;
+    // z-index: 100;
+    // display: block;
+    // overflow: visible;
+}
+
+div  { 
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: fit-content;
+    z-index: 10;
+    overflow: visible;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px dashed $color-2;
+    color: $color-2;
+    font-size: 1.3vw;
+    font-weight: 200;
+    height: 40px;
+    margin-right: 20px;
+    display: inline-block;
+    margin-bottom: 30px;
+    border-radius: 0 !important;
+    transition: all 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    &::-webkit-input-placeholder {
+        color: $color-2;
+        opacity: 0.69;
+        transition: all 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    &:focus {
+        outline: none;  
+        border-bottom: 2px solid $color-2;  
+        transition: all 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+      }
+    &:focus::-webkit-input-placeholder {
+        transform: translate3d(0,-25px,0);
+        font-size: 69%;
+    }
+}
+
+button {
+    border-radius: 500px !important;
+    background: $color-1;
+    color: $color-2;
+    border: 2px dashed $color-2 !important;
+    margin-right: 0 !important;
+    display: inline-block !important;
+    transition: all 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    &:hover {
+        background: $color-2;
+        transition: all 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        p { 
+            color: $color-1 !important; 
+            transition: all 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        }
+    }
+}

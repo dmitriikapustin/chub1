@@ -1,0 +1,38 @@
+// SCSS STRUCTURE //
+
+
+
+// 1. SCSS variables
+@import "variables";
+
+// 2. Adding fonts
+@import "fonts";
+
+// 3. Mixins in SCSS
+@import "mixins";
+
+// 4. Text styles
+@import "text";
+
+// 5. Defaults like "*", "html", "body", "section" and etc.
+@import "defaults";
+
+// 6. Groups of atoms to components (most simple blocks)
+@import "components";
+
+// 7. Main file of project
+@import "base";
+
+// 8. Desktop styles for 1600 and more
+@import "desktop_b";
+
+
+
+// 10. Mobile styles
+@import "preloader";
+
+// 11. Default classes
+@import "class";
+
+// 12. Mobile styles
+@import "mobile";

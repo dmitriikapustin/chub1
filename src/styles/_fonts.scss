@@ -1,0 +1,19 @@
+@font-face {
+    font-family: $font-name; /* Имя шрифта */
+    src: url(fonts/TTNorms-Light.woff) format("woff"); /* Путь к файлу со шрифтом */
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: $font-name; /* Имя шрифта */
+    src: url(fonts/TTNorms-Regular.woff) format("woff"); /* Путь к файлу со шрифтом */
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: $font-name; /* Имя шрифта */
+    src: url(fonts/TTNorms-Medium.woff) format("woff"); /* Путь к файлу со шрифтом */
+    font-weight: 600;
+}
+
+

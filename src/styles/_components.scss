@@ -1,0 +1,116 @@
+// Animated headings settings
+.words-wrapped {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    height: fit-content;
+
+    span {
+        display: inline-block;
+        font-size: 5vw;
+        font-family: $font-name;
+        font-weight: 700;
+        text-transform: uppercase;
+        &:not(:last-child) {
+            margin-right: 1.5vw;
+        }
+    }
+    .anim-heading-span { transform: translate3d(0, 1.2em, 0); }
+}
+
+// Animation line-by-line
+.animated-paragraph_item, .animated-paragraph_item_no-scroll_1, .animated-paragraph_item_no-scroll_2, .animated-paragraph_item_no-scroll_h, .animated-paragraph_item_no-scroll_team {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    height: fit-content; 
+}
+
+
+.animated-paragraph_item_no-scroll_h.no-mobile {
+    line-height: 1.3em;
+}
+
+.person-text {
+    margin: 0 !important
+}
+
+.section-horizontal-scroll {
+    display: flex;  
+    flex-direction: row; 
+ 
+    // overflow: auto;
+    .horizontal-scroll-paragraph {
+        position: relative;
+        margin: 0;
+
+        height: fit-content;
+        .ov-hidden {
+            overflow: hidden;
+            display: block;
+            span {
+                display: inline-block;
+                font-size: 1.5vw;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+        }  
+    }
+    .horizontal-scroll-image {
+        width: 15%;
+    }
+}
+
+
+// Text underlined
+.underline_text {
+    position: relative;
+    width: fit-content;
+    overflow: visible;
+    &:after {
+        margin: 0;
+        left: 0;
+        position: absolute;
+        content: '';
+        height: 1px;
+        background: #000;
+        width: 100%;
+        display: block;
+    }
+}
+
+
+.form {
+    width: 100%;
+    form {
+        width: 100%;
+        justify-content: space-between !important;
+        margin-bottom: 50px !important;
+        button, a {
+            display: flex;
+            align-items: center;
+            color: $color-1 !important;
+        }
+        input {
+            width: calc(33% - 10px) !important;
+            max-width: calc(33% - 10px) !important;
+            margin: 0 !important;
+            &:nth-child(3) {
+                margin: 0 30px !important;
+            }
+        }
+        button {
+            max-width: calc(33% - 50px) !important;
+            width: calc(33% - 50px) !important;
+        }
+        button p {
+            margin: 0 !important;
+            color: $color-2;
+            padding: 15px 30px !important;
+            transition: all 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        }
+    }    
+}    
+
+
+

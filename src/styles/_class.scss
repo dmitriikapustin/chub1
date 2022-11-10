@@ -1,0 +1,109 @@
+// Container settings
+.container { width: calc(100vw - 150px) !important; margin: 0 auto; padding: 25px 0; max-width: 1900px !important;}
+.container-100 { width: 100% !important; }
+
+// Text color controls
+.text-color-1 { color: $color_1 !important; }
+.text-color-1::selection {background: rgba(255, 255, 255, 0.5); } 
+.text-color-2 { color: $color_2 !important; }
+.text-color-2::selection {background: rgba(4, 16, 34, 0.5); }
+.text-color-3 { color: $color_3 !important; }
+.text-color-3::selection {background: rgba(255, 2, 2, 0.5); }
+.text-color-4 { color: $color_4 !important; }
+.text-color-4::selection {background: rgba(184, 184, 184, 0.5); }
+.text-color-5 { color: $color_5 !important; }
+.text-color-5::selection {background: rgba(219, 108, 30, 0.5); }
+.text-color-6 { color: $color_6 !important; }
+.text-color-6::selection {background: rgba(72, 73, 177, 0.5); }
+.text-color-7 { color: $color_7 !important; }
+.text-color-7::selection {background: rgba(82, 82, 82, 0.5); }
+
+
+
+// Text weight controls
+.w-400 { font-weight: 400 !important; }
+.w-500 { font-weight: 500 !important; }
+.w-600 { font-weight: 600 !important; }
+.w-700 { font-weight: 700 !important; }
+.w-800 { font-weight: 800 !important; }
+.w-900 { font-weight: 900 !important; }
+
+// Flex-direction control
+.flex {
+    display: flex;
+    &-col { flex-direction: column; }
+    &-row { flex-direction: row; }
+}
+
+// Justify control
+.space-between {
+    justify-content: space-between;
+}
+
+// Align styles
+.align {
+    display: flex;
+    &-center { align-items: center; justify-content: center; margin: 0 auto !important; }
+    &-left { align-items: flex-start; justify-content: flex-start; }
+}
+
+// Start / End positions
+.flex {
+    display: flex;
+    &-start { align-items: flex-start; }
+    &-center { align-items: center; }
+    &-end { align-items: flex-end; }
+}
+
+
+.justify {
+    &-start { justify-content: start; }
+    &-center { justify-content: center; }
+    &-end { justify-content: end; }
+}
+
+// Flex-wrap styles
+.wrap { flex-wrap: wrap; }
+.no-wrap { flex-wrap: nowrap; }
+
+// Universal trigger style for every trigger
+.trigger {
+    display: block;
+    position: relative;
+    height: 1px;
+    width: 1px;
+    opacity: 0;
+}
+
+.only-mobile { display: none !important; }
+@media (max-width: 800px) {
+    .no-mobile { display: none !important; }
+    .only-mobile { display: block !important; }
+}
+
+// Relative container
+.relative {
+    position: relative !important;
+}
+
+// Hiding sure
+.hidden-locked { display: none !important; z-index: -1 !important; opacity: 0 !important; pointer-events: none !important;}
+
+.ov-hidden {
+    overflow: hidden;
+    display: block;
+    span {
+        display: inline-block;
+        font-family: $font-name;
+        transform: translate3d(0, 1.4em, 0);
+    }
+}  
+
+
+
+.abs-el {
+    position: absolute !important;
+    overflow: visible !important;
+    display: block !important;
+    height: fit-content !important;
+}

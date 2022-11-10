@@ -1,0 +1,40 @@
+a, p, h1, h2, h3, body, input, button, span, div, ul, li {
+    font-family: $font-name;
+    color: $color-1;
+}
+
+a { 
+    font-size: 1.3vw;
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.3vw;
+    font-weight: 500;
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 5vw;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 5vw;
+}
+
+h3 {
+    font-size: 2.2vw;
+    font-weight: 700;
+}
+
+ul,
+li {}
+
+span {}
+
+input {}
+
+button {}

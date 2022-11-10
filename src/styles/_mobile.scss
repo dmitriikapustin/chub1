@@ -1,0 +1,30 @@
+@media screen and (max-width: 800px) {
+    .container {
+        width: calc(100vw - 60px) !important;
+    }
+    .logo {
+        p {
+            font-size: 8vw !important;
+            svg {
+                width: 12.5% !important;
+                top: 1px !important;
+            }
+        }
+    } 
+    .info-text {
+        width: 100% !important;
+        h3 {
+            font-size: 13.5vw !important;
+            margin-bottom: 120px !important;
+            svg {
+                top: 2px !important;
+            }
+        }
+    }
+
+    .bottom-text {
+        p {
+            font-size: 7.8vw !important;
+        }
+    }
+}

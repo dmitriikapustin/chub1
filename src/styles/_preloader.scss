@@ -1,0 +1,80 @@
+// .preloader {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     position: fixed;
+//     flex-direction: column;
+//     /* координаты положения */
+//     left: 0;
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     /* фоновый цвет элемента */
+//     background: $color_2 !important;
+//     z-index: 1001 !important;
+//     transition: all .5s ease-out; 
+//     height: 100vh;
+//     .preloader-container-logo {
+//         transition: all ease-in 0.3s;
+//         // .preloader-gif.preloader-gif-hidden {
+//         //     transition: all ease-in 0.3s;
+//         //     opacity: 0;
+//         // }
+//         .preloader-gif {
+//             display: inline-block;
+//             width: auto;
+//             height: auto;
+//             background: url("../images/preloader.gif") no-repeat center;
+//             background-size: cover;
+//             background-position: center center;
+            
+//         }
+//         // svg {
+//         //     transition: all ease-in 0.5s;
+//         // }
+    
+//         // .t-m {
+//         //     overflow: hidden !important;
+//         // }
+//         // "STUDIO" animation
+//         .studio-letters {
+//             -webkit-transition: all ease-in .7s 1;
+//             // transform: translate3d(0, 0, 0) rotate(0deg) scale(1);
+//         }
+
+//         // .studio-letters.w {
+//         //     -webkit-transition: all ease-in .7s 1;
+//         //     // transform: translate3d(0, 0, 0) rotate(0deg) scale(1);
+//         // }
+//         // .studio-letters.s {
+//         //     transition: all ease-in .7s;
+//         //     transform: translate3d(30%, 55%, 0) rotate(-13deg) scale(0);
+//         // }
+
+//         // .studio-letters.t {
+//         //     transition: all ease-in .7s;
+//         //     transform: translate3d(38%, 55%, 0) rotate(-13deg) scale(0);
+//         // }
+//         // .studio-letters.u {
+//         //     transition: all ease-in .7s;
+//         //     transform: translate3d(46%, 55%, 0) rotate(-13deg) scale(0);
+//         // }
+//         // .studio-letters.d {
+//         //     transition: all ease-in .7s;
+//         //     transform: translate3d(54%, 55%, 0) rotate(-13deg) scale(0);
+//         // }
+//         // .studio-letters.i {
+//         //     transition: all ease-in .7s;
+//         //     transform: translate3d(62%, 55%, 0) rotate(-13deg) scale(0);
+//         // }
+//         // .studio-letters.o {
+//         //     transition: all ease-in .7s;
+//         //     transform: translate3d(70%, 55%, 0) rotate(-13deg) scale(0);
+//         // }
+//     }
+
+// }
+// .preloader.take_away {
+//     opacity: 0;
+//     transform: scale(1.3);
+// }    

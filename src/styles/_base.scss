@@ -1,0 +1,64 @@
+.plug {
+    height: 100vh;
+    background-image: url("../images/Main-cover.png");
+    background-size: cover;
+    .container {
+        .logo, .bottom-text {
+            width: 100%;
+        }
+
+        .logo {
+            p {
+                font-size: 2.5vw;
+                margin-top: 0;
+                margin-bottom: 0;
+                font-weight: 400;
+                svg {
+                    width: 18%;
+                    position: relative;
+                    top: 2px;
+                    height: auto;
+                }
+            }
+        }
+        .info-text {
+            width: 55%;
+            h3 {
+                margin-top: 110px;
+                margin-bottom: 170px;
+                font-size: 5.5vw;
+                font-weight: 300;
+                line-height: 1;
+                .svg-smile {
+                    width: 8.5%;
+                    top: 10px;
+                    height: auto;
+                }
+                svg {
+                    position: relative;
+                    width: 8%;
+                    top: 10px;
+                    height: auto;
+                }
+            }
+        }
+
+        .logo, .info-text {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .bottom-text {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            p {
+                margin-top: 0;
+                text-align: right;
+                font-size: 2.4vw;
+                font-weight: 400;
+            }
+        }
+    }
+}

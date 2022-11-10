@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" id="js-scroll" data-scroll-direction="vertical">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chub</title>
+    <meta name="description" content=" ">
+    <meta name="keywords" content=" ">
+    <link rel="stylesheet" href="style.css?ver=<?= rand(1, 9999); ?>">
+    <script src="libs/jquery.min.js"></script>
+    <script src="libs/TweenMax.min.js"></script>
+    <script src="libs/gsap.min.js"></script>
+    <script src="libs/ScrollMagic.min.js"></script>
+    <script src="libs/ScrollMagic.animation.gsap.js"></script>
+    <script src="libs/ScrollMagic.debug.addIndicators.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body onload="init()" id="body">
+
+  
+<section class="plug">
+    <div class="container">
+        <div class="flex-col container-100">
+            <div class="logo">
+                <p>c<svg class="logo-svg" width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.7381 35.7167C28.5369 35.7167 36.4803 27.7733 36.4803 17.9745C36.4803 8.17578 28.5369 0.23233 18.7381 0.23233C8.93941 0.23233 0.995952 8.17578 0.995952 17.9745C0.995951 27.7733 8.9394 35.7167 18.7381 35.7167ZM25.3414 16.7776L6.86018 16.7776L6.86018 19.2647L25.3414 19.2647L16.7226 27.8836L18.4812 29.6422L29.2229 18.9005L30.1022 18.0212L29.2229 17.1419L18.4812 6.40016L16.7225 8.15882L25.3414 16.7776Z" fill="#F2F2F2"/>
+                    </svg>hub<svg class="logo-svg" width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.3017 35.7167C28.1005 35.7167 36.0439 27.7733 36.0439 17.9745C36.0439 8.17578 28.1005 0.23233 18.3017 0.23233C8.503 0.23233 0.559551 8.17578 0.55955 17.9745C0.55955 27.7733 8.503 35.7167 18.3017 35.7167ZM19.9278 9.12982L17.6165 9.12982C17.2357 9.89141 16.7442 10.4847 16.142 10.9098C15.5487 11.326 14.6808 11.5961 13.5384 11.7201L13.5384 13.7658L16.939 13.7658L16.939 28.1784L19.9278 28.1784L19.9278 9.12982Z" fill="#F2F2F2"/>
+                    </svg>
+                </p>
+            </div>
+            <div class="info-text">
+                <h3>сайт находится
+                    <br class="no-mobile">в разработке, <svg class="svg-smile" width="79" height="79" viewBox="0 0 79 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M39.5 79C61.3152 79 79 61.3152 79 39.5C79 17.6848 61.3152 0 39.5 0C17.6848 0 0 17.6848 0 39.5C0 61.3152 17.6848 79 39.5 79ZM38.9307 63.88C27.7754 63.88 18.4214 56.1524 15.9366 45.7565L13.0401 46.4489C15.838 58.1543 26.3661 66.8581 38.9307 66.8581C51.4953 66.8581 62.0234 58.1543 64.8212 46.4489L61.9248 45.7565C59.4399 56.1524 50.0859 63.88 38.9307 63.88Z" fill="white"/>
+                        </svg><br>
+                    по всем вопросам сюда <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M35 68.6038C53.5589 68.6038 68.6038 53.5589 68.6038 35C68.6038 16.4412 53.5589 1.39624 35 1.39624C16.4412 1.39624 1.39624 16.4412 1.39624 35C1.39624 53.5589 16.4412 68.6038 35 68.6038Z" stroke="white" stroke-width="2.79253"/>
+                        <path d="M33.1902 56.3803L54.3803 35.1902M54.3803 35.1902L33.1901 14M54.3803 35.1902H12" stroke="white" stroke-width="2.7852"/>
+                        </svg>
+                        <svg width="71" height="63" viewBox="0 0 71 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 29.152C0 28.7797 0 28.4213 0 28.049C0.372259 26.8357 1.25465 26.1739 2.399 25.7189C19.3023 19.0183 36.2057 12.29 53.0952 5.57557C57.5623 3.797 62.0294 2.03221 66.4827 0.253643C67.5582 -0.173766 68.5508 -0.0772545 69.447 0.667264C70.3018 1.37042 70.5914 2.32175 70.3984 3.38338C69.9847 5.61693 69.5435 7.8367 69.1161 10.0565C67.5444 18.3289 65.9588 26.6013 64.3871 34.86C62.8015 43.2013 61.1884 51.5289 59.6442 59.8703C59.3684 61.3317 58.8032 62.4485 57.3831 63C56.9694 63 56.5558 63 56.1422 63C55.508 62.6967 54.8876 62.3658 54.3085 61.9659C48.89 58.2847 43.4716 54.6173 38.0669 50.9223C37.5844 50.5914 37.2811 50.6189 36.8123 50.9498C33.9721 53.0317 31.0905 55.086 28.2228 57.1404C26.2098 58.5743 24.1417 57.8297 23.5075 55.4445C21.9909 49.7503 20.488 44.0424 18.999 38.3344C18.8887 37.8932 18.6957 37.6588 18.2545 37.4934C13.0153 35.508 7.78987 33.4812 2.55066 31.5096C1.35116 31.0546 0.413621 30.4066 0 29.152ZM63.2289 11.1457C63.1738 11.1319 63.1324 11.1181 63.0773 11.0905C62.9945 11.1595 62.9118 11.2422 62.8291 11.3111C52.8746 20.8933 42.9339 30.4618 32.9656 40.0164C32.5658 40.4025 32.6761 40.5404 33.0621 40.8023C40.1488 45.5865 47.2218 50.3845 54.2947 55.1826C54.4188 55.2653 54.5567 55.348 54.7772 55.4721C57.5899 40.6507 60.4163 25.8982 63.2289 11.1457ZM10.506 28.5316C10.8093 28.6556 10.9472 28.7108 11.0988 28.7659C14.6698 30.1309 18.2269 31.5096 21.7978 32.8608C22.9698 33.302 23.7143 34.0603 23.9625 35.3012C24.0314 35.6183 24.1279 35.9216 24.2106 36.2249C24.5691 37.5347 24.9138 38.8583 25.2723 40.1681C25.6032 39.3822 26.1409 38.8445 26.7062 38.293C35.9988 29.3726 45.2777 20.4384 54.5567 11.5041C54.7497 11.3111 54.9841 11.1595 55.1909 10.9802C55.1357 10.9251 55.0806 10.8561 55.0254 10.801C40.2316 16.702 25.4377 22.5892 10.506 28.5316ZM27.9746 50.4259C29.4223 49.3919 30.7872 48.3992 32.166 47.4203C32.5244 47.1721 32.3314 47.048 32.097 46.8826C31.2836 46.3311 30.4701 45.7796 29.6567 45.2281C28.4571 44.4146 27.2576 43.6012 25.9341 42.6912C26.6372 45.3522 27.299 47.8477 27.9746 50.4259Z" fill="white"/>
+                        </svg>
+                                                    
+                </h3>
+            </div>
+            <div class="bottom-text">
+                <p>Creative Hub 1</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="scripts.min.js?ver=<?= rand(1, 9999); ?>"></script>
+</body>
+
+</html>  
