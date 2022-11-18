@@ -82,6 +82,17 @@
 
 .form {
     width: 100%;
+    .top-text {
+        h3 {
+            font-size: 3.5vw;
+            max-width: 56% !important;
+        }
+    }
+    .bottom-text {
+        p {
+            color: $color-2;
+        }
+    }
     form {
         width: 100%;
         justify-content: space-between !important;
@@ -89,20 +100,48 @@
         button, a {
             display: flex;
             align-items: center;
-            color: $color-1 !important;
+            color: $color-2 !important;
         }
-        input {
-            width: calc(33% - 10px) !important;
-            max-width: calc(33% - 10px) !important;
-            margin: 0 !important;
-            &:nth-child(3) {
-                margin: 0 30px !important;
+        .input-field {
+            display: inline-block !important;
+            max-width: calc(33% - 10px);
+            width: calc(33% - 10px);
+            justify-content: space-between !important;
+            margin-right: 10px !important;
+            input {
+                width: 100%;
+                max-width: 100%;
+                margin: 0 !important;
+                transition: all 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+                &:focus {
+                    outline: none;  
+                    border-bottom: 2px solid $color-2;  
+                    transition: all 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+                  }
+                }
+            label {
+                position: absolute;
+                font-size: 1.6vw;
+                left: 0px;
+                top: 5px;
+                overflow: hidden;
+                color: $color-2;
+                white-space: nowrap;
+                z-index: 1;
+                opacity: 0.69;
+                transition: all 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
             }
+            input {
+                &:focus, &:not(:placeholder-shown), &:-webkit-autofill {
+                  &+label { top: -13px; font-size: 90%; }
+                }
+              }
+            
         }
-        button {
-            max-width: calc(33% - 50px) !important;
-            width: calc(33% - 50px) !important;
-        }
+        // button {
+        //     max-width: calc(33% - 50px) !important;
+        //     width: calc(33% - 50px) !important;
+        // }
         button p {
             margin: 0 !important;
             color: $color-2;

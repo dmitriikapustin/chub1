@@ -1,7 +1,7 @@
 * { box-sizing: border-box; }
 
 body, html {
-    background: $color_2 !important;
+    background: $color_1 !important;
     font-family: $font-name, sans-serif !important;
     margin: 0;
     padding: 0;
@@ -63,7 +63,7 @@ div  {
 input {
     background-color: transparent;
     border: none;
-    border-bottom: 2px dashed $color-2;
+    border-bottom: 1px solid $color-2;
     color: $color-2;
     font-size: 1.3vw;
     font-weight: 200;
@@ -78,11 +78,11 @@ input {
         opacity: 0.69;
         transition: all 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
     }
-    &:focus {
-        outline: none;  
-        border-bottom: 2px solid $color-2;  
-        transition: all 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-      }
+    // &:focus {
+    //     outline: none;  
+    //     border-bottom: 1px solid $color-2;  
+    //     transition: all 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    //   }
     &:focus::-webkit-input-placeholder {
         transform: translate3d(0,-25px,0);
         font-size: 69%;
