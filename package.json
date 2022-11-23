@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy-production": "gulp build && ftp-deploy --server 37.140.192.94 --username u1255912 --password \"27w_Ycy8\" --server-dir ./www/litvinovgang.ru/ --local-dir ./dist/",
-    "deploy-dev": "gulp build && ftp-deploy --server 37.140.192.94 --username u1255912 --password \"27w_Ycy8\" --server-dir ./www/litvinovgang.ru/ --local-dir ./dist/",
+    "deploy-production": "gulp build && ftp-deploy --server 31.31.196.204 --username u1830973 --password \"B2U3xnB3hXeZZ02B\" --server-dir ./www/static.chub1.com/ --local-dir ./dist/",
+    "deploy-dev": "gulp build && ftp-deploy --server 31.31.196.204 --username u1830973 --password \"B2U3xnB3hXeZZ02B\" --server-dir ./www/static.chub1.com/ --local-dir ./dist/",
     "git": "echo Write your commit message && read message && echo Your commit is $message. Starting Git work! && git add . && echo Files added && git commit -m \"${message}\" && echo Commited as $message && git push origin main && echo Build pushed to main branch!",
     "save": "npm run git && npm run deploy-dev && exit 1"
   },

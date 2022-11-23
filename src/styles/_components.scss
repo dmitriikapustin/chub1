@@ -81,16 +81,156 @@
 
 
 .form {
+    height: 100vh;
     width: 100%;
+    background-color: $color-9;
+    border-radius: 39px;
     .top-text {
         h3 {
             font-size: 3.5vw;
             max-width: 56% !important;
+            font-weight: 400 !important;
         }
     }
     .bottom-text {
-        p {
-            color: $color-2;
+        .unstyled {
+            width: 100% !important;
+            margin-bottom: 20px;
+        }
+        // height: auto;
+        .agree {
+            display: flex;
+            flex-direction: row;
+            .unstyled {
+                padding-left: 0 !important;
+                flex-direction: row;
+                width: 50%;
+                align-items: center;
+                .styled-checkbox {
+                    position: absolute; 
+                    opacity: 0; 
+                    width: 50%;
+                    & + label {
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                      position: relative;
+                      width: fit-content;
+                      cursor: pointer;
+                      padding: 0;
+                      width: 50%;
+                      margin-right: 60px;
+                      p {
+                        color: $color-2;
+                        font-size: 1.1vw;
+                        }
+                    }
+                    &:checked + label:before {
+                        background: $color-3;
+                        appearance: none;
+                        border: 0.75px solid $color-3;
+                      }
+                    // Box.
+                    & + label:before {
+                      content: '';
+                      margin-right: 20px;
+                      display: inline-block;
+                      vertical-align: text-top;
+                      width: 20px;
+                      height: 20px;
+                      border: 0.75px solid black;
+                      border-radius: 1000px;
+                    }
+                  
+                    // Box hover
+                    // &:hover + label:before {
+                    //   background: rgba(224, 150, 12, 0.5);
+                    // }
+                    
+                    // Box focus
+                    // &:focus + label:before {
+                    //   box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+                    // }
+                  
+                    
+                    // Disabled state label.
+                    // &:disabled + label {
+                    //   color: #b8b8b8;
+                    //   cursor: auto;
+                    // }
+                  
+                    // Disabled box.
+                    &:disabled + label:before {
+                      box-shadow: none;
+        
+                    }
+
+                  }
+            }
+        }
+        .choose {
+            // height: fit-content;
+            width: fit-content; 
+            // & > div {
+            //     flex-grow: 1;
+            // }
+            // & > a {
+            //     flex-grow: 1;
+            // }
+            .arrow-container {
+                position: relative;
+                width: 15.5%;
+                height: 100%;
+                .circle-arrow {
+                    transition: all .3s ease-out;
+                }
+                picture {
+                    img {
+
+                    }
+                }
+                .arrow-right {
+                    position: absolute;
+                    // opacity: 1;
+                    left: -1.5%;
+                    // top: 14.8%;
+                }
+            }
+            a { 
+                width: 84.5%;
+                height: 100%;
+                // height: auto;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                text-align: center;
+                border: 0.7px solid black;
+                border-radius: 50px;
+                transition: all .3s ease-out;
+                color: $color-2;
+                font-size: 1.5vw;
+                // p {
+                //     width: 100%;
+                //     text-align: center;
+                //     // padding: 1.5% 50%;
+                //     padding-left: 30px;
+                //     padding-right: 30px;
+                //     color: $color-2;
+                //     font-size: 1.5vw;
+                //     margin: 8px auto;
+                // }
+            } 
+        }
+        .choose:hover {
+            .arrow-container {
+                .circle-arrow {
+                    transition: all .3s ease-out;
+                    opacity: 0;
+                }
+            }
+            a {
+                background-color: $color-7;
+                transition: all .3s ease-out;
+            }
         }
     }
     form {
