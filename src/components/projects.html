@@ -5,21 +5,9 @@
                 <div class="name">
                     <h3>проекты</h3>
                 </div>
-                <div class="arrow-all flex-row">
-                    <div class="arrow-all-container">
-                        <picture class="all-projects-circle-arrow" id="">
-                            <source srcset="./images/circle-arrow.webp" type="image/webp">
-                            <img src="./images/circle-arrow.png" alt="">
-                        </picture>
-                        <picture class="all-projects-arrow-right" id="">
-                            <source srcset="./images/arrow-right.webp" type="image/webp">
-                            <img src="./images/arrow-right.png" alt="">
-                        </picture>
-                    </div>
-                    <a href="">
-                        все&nbsp;проекты
-                    </a>
-                </div>
+                @@include("./button.html", {
+                    "text": "все&nbsp;проекты"
+                }) 
             </div>
             <div class="project-items flex-row">
                 <div class="project-item">

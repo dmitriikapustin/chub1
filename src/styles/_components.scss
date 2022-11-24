@@ -81,7 +81,7 @@
 
 
 .form {
-    height: 100vh;
+    // height: 100vh;
     width: 100%;
     background-color: $color-9;
     border-radius: 39px;
@@ -191,8 +191,8 @@
                 }
                 .arrow-right {
                     position: absolute;
-                    // opacity: 1;
-                    left: -1.5%;
+                    opacity: 0;
+                    left: 645%;
                     // top: 14.8%;
                 }
             }
@@ -225,6 +225,11 @@
                 .circle-arrow {
                     transition: all .3s ease-out;
                     opacity: 0;
+                }
+                .arrow-right {
+                    transition: all .3s ease-out;
+                    opacity: 1;
+                    // top: 14.8%;
                 }
             }
             a {
@@ -289,7 +294,48 @@
             transition: all 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
         }
     }    
-}    
+}   
 
+
+
+
+.button {
+    // display: inline-block;
+    &:hover {
+        .circle-arrow {
+            transition: all .3s ease-out;
+            opacity: 0;
+        }
+        a {
+            transition: all .3s ease-out;
+            background-color: $color-5;
+        }
+    }
+    .button-container {
+        width: 17%;
+        position: relative;
+        .arrow-right {
+            position: absolute;
+            left: -2%;
+        }
+        .circle-arrow {
+            transition: all .3s ease-out;
+        }
+    }
+    a { 
+        width: 83%;
+        height: 100%;
+        // height: auto;
+        padding-top: 3.7%;
+        padding-bottom: 3.7%;
+        text-align: center;
+        border: 0.7px solid black;
+        border-radius: 50px;
+        transition: all .3s ease-out;
+        color: $color-2;
+        font-size: 1.5vw;
+    }  
+
+}
 
 

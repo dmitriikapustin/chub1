@@ -18,7 +18,7 @@
         .header-burger {
             display: block !important;
             svg {
-                width: 80% !important;
+                width: 24px !important;
             }
         }
     }
@@ -132,10 +132,25 @@
                 }
             }
         }
+        .project-item:not(:last-child) {
+            margin-right: 0px !important;
+        }
         .project-item {
-            width: calc(50% - 5px) !important;
-            margin-top: 0px !important;
-            margin-bottom: 0px !important;
+            width: 100% !important;
+            margin-top: 6px !important;
+            margin-bottom: 6px !important;
+            &:hover {
+                picture {
+                transform: scale(1) !important;
+                filter: blur(0) !important;
+                transition: all ease-in 0.15s;
+                }
+                &::after {
+                    opacity: 0 !important;
+                    transition: all ease-in 0.15s;
+                    // filter: blur(0px) !important;
+                } 
+            }
             // picture {
             //     img {
             //         min-height: 143px !important;
@@ -143,51 +158,37 @@
             // }
         }
         .text-item {
-            margin-top: 8px !important;
+            margin-top: 6px !important;
+            margin-bottom: 6px !important;
             p {
-                width: 90% !important;
+                width: 100% !important;
                 margin-top: 0 !important;
-                margin-bottom: 5px !important;
-                margin-left: 25px !important;
-                font-size: 3.3vw !important;
+                margin-bottom: 8.5px !important;
+                margin-left: 50px !important;
+                font-size: 7vw !important;
                 line-height: 1 !important;
             }
             span {
-                font-size: 3.33vw !important;
+                font-size: 7.11vw !important;
                 line-height: 1 !important;
-            }
-        }
-        
-        .arrow-all {
-            justify-content: flex-end !important;
-            width: 50% !important;
-            .arrow-all-container {
-                width: 14% !important;
-            }
-            a { 
-                display: inline-block !important;
-                vertical-align: middle !important;
-                width: 60% !important;
-                padding-top: 2.5% !important;
-                padding-bottom: 2.5% !important;
-                // padding-top: 4px !important;
-                // padding-bottom: 4px !important;
-                font-size: 3.5vw !important;
-            }
-            .all-projects-arrow-right, .all-projects-circle-arrow {
-                vertical-align: middle !important;
             }
         }
     }
     .cover-block {
+        .cover {
+            transform: scale(1.6) translate(-50px, 0);
+        }
         .cover-text-container {
             margin-top: 5% !important;
             .cover-text {
+                justify-content: flex-end !important;
+                width: 50% !important;
                 h1 {
-                    font-size: 3vw !important;
+                    font-size: 4vw !important;
+                    // text-align: end;
                 }
                 .olga-s-span {
-                    font-size: 2.5vw !important;
+                    font-size: 3.7vw !important;
                 }
             }
         }
@@ -266,21 +267,25 @@
             .input-field {
                 width: 100% !important;
                 max-width: 100% !important;
-
                 label {
                     font-size: 5vw !important;
                     top: 15px !important;
                 }
 
-                input[type="text"]::placeholder,  input[type="tel"]::placeholder {
-                    position: relative !important;
-                    top: 10px !important;
-                }
+                // input[type="text"] div::placeholder,  input[type="tel"] div::placeholder {
+                //     position: relative !important;
+                //     top: 30px !important;
+                // }
                 input {
                     font-size: 3.4vw;
                     position: relative;
                     top: 0px !important;
+                    
                     // height: 100%;
+                    &:focus {
+                        border-bottom: 1px solid $color-2;  
+                      }
+
                     &:focus, &:not(:placeholder-shown), &:-webkit-autofill {
                       &+label { top: 0px !important; font-size: 40% !important; }
                     }
@@ -295,22 +300,30 @@
         .container {
             margin: 0 !important;
             margin-left: 20px !important;
-            width: 55% !important;
+            width: 100% !important;
             justify-content: flex-start !important;
-            flex-direction: column !important;
+            flex-direction: column-reverse !important;
             align-items: flex-start !important;
             .left-side, .right-side {
                 justify-content: flex-start !important;
-                flex-direction: column !important;
+                // width: 50% !important;
             }
             .right-side {
-                align-items: flex-start;
-                text-align: start;
-                justify-content: flex-start !important;
-                a {
+                .social, .copyright-text, .left-side p {
+                    width: 48.5% !important;
+                    max-width: 48.5% !important;
+                }
+                width: 100% !important;
+                // align-items: flex-start;
+                // text-align: start;
+                // justify-content: flex-start !important;
+                a:not(:last-child) {
                     margin-left: 0 !important;
-                    margin-right: 25px !important;  
+                    margin-right: 30px !important;  
                 }  
+                a:last-child {
+                    margin-right: 0 !important;
+                }
                 .copyright-text {
                     margin-left: 0 !important;
                 }  
@@ -319,6 +332,26 @@
                 margin-bottom: 15px !important;
                 margin-top: 0 !important;
             }
+        }
+    }
+    .button {
+        justify-content: flex-end !important;
+        width: 50% !important;
+        .button-container {
+            width: 14% !important;
+        }
+        a { 
+            display: inline-block !important;
+            vertical-align: middle !important;
+            width: 60% !important;
+            padding-top: 2.5% !important;
+            padding-bottom: 2.5% !important;
+            // padding-top: 4px !important;
+            // padding-bottom: 4px !important;
+            font-size: 3.5vw !important;
+        }
+        .arrow-right, .circle-arrow {
+            vertical-align: middle !important;
         }
     }
 }
