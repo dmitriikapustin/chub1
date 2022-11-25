@@ -184,6 +184,7 @@
         }
         .right-side {
             align-items: center;
+            justify-content: flex-end;
             .social {
                 a {
                     display: inline-block;
@@ -198,9 +199,9 @@
                 }
             }
             .chat {
-                display: inline-block;
+                // display: inline-block;
                 height: auto;
-                width: 20%;
+                width: 30%;
                 a {
                     margin: 0 0 0 30px;
 
@@ -432,6 +433,9 @@
     }
     .no-hover:hover {
         opacity: 1 !important;
+    }
+    .no-hover {
+        margin-right: 0 !important;
     }
     .container {
         padding-top: 0.8%;
