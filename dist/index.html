@@ -62,7 +62,7 @@
                     <p>проекты</p>
                 </a>
             </div>
-            <div class="change-language">ru</div>
+            <div class="change-language"><p>ru</p></div>
             <div class="header-burger">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M3 5.00006C2.64063 4.99615 2.30469 5.18365 2.12109 5.49615C1.94141 5.80865 1.94141 6.19147 2.12109 6.50397C2.30469 6.81647 2.64063 7.00397 3 7.00006H21C21.3594 7.00397 21.6953 6.81647 21.8789 6.50397C22.0586 6.19147 22.0586 5.80865 21.8789 5.49615C21.6953 5.18365 21.3594 4.99615 21 5.00006H3ZM3 11.0001C2.64063 10.9962 2.30469 11.1837 2.12109 11.4962C1.94141 11.8087 1.94141 12.1915 2.12109 12.504C2.30469 12.8165 2.64063 13.004 3 13.0001H21C21.3594 13.004 21.6953 12.8165 21.8789 12.504C22.0586 12.1915 22.0586 11.8087 21.8789 11.4962C21.6953 11.1837 21.3594 10.9962 21 11.0001H3ZM3 17.0001C2.64063 16.9962 2.30469 17.1837 2.12109 17.4962C1.94141 17.8087 1.94141 18.1915 2.12109 18.504C2.30469 18.8165 2.64063 19.004 3 19.0001H21C21.3594 19.004 21.6953 18.8165 21.8789 18.504C22.0586 18.1915 22.0586 17.8087 21.8789 17.4962C21.6953 17.1837 21.3594 16.9962 21 17.0001H3Z" fill="white"/>
@@ -135,14 +135,13 @@
                 </div>
                 <div class="button flex-row">
     <div class="button-container">
-        <picture class="circle-arrow" id="">
-            <source srcset="./images/circle-arrow.webp" type="image/webp">
+        <div class="circle-arrow">
             <img src="./images/circle-arrow.svg" alt="">
-        </picture>
-        <picture class="arrow-right" id="">
-            <source srcset="./images/arrow-right.webp" type="image/webp">
-            <img src="./images/arrow-right.svg" alt="">
-        </picture>
+        </div>
+    
+        <div class="arrow-right">
+            <img src="./images/arrow.svg" alt="">
+        </div>
     </div>
     <a href="">
         все&nbsp;проекты
@@ -201,14 +200,14 @@
     <div class="container">
         <div class="cover">
             <picture>
-                <source srcset="./images/olga-s.webp" type="image/webp">
-                <img src="./images/olga-s.png" alt="">
+                <source srcset="./images/cover-olga-s.webp" type="image/webp">
+                <img src="./images/cover-olga-s.png" alt="">
             </picture>
         </div>
         <div class="cover-text-container">
             <div class="cover-text flex-col">
                 <h1>Анализируйте, экспериментируйте, пробуйте новое. Главное развиваться, исследовать.<span class="text-color-6 span-class"> Принимайте решения, делайте и не бойтесь.</span> А если боитесь, то&nbsp;лучше не делайте. Найдите то, что&nbsp;вам&nbsp;по&nbsp;плечу.
-                    <br><span class="olga-s-span">Ольга Сучкова, основатель Creative Hub 1</span></h1>
+                    <br><br><span class="olga-s-span">Ольга Сучкова, <br> основатель Creative Hub 1</span></h1>
             </div>
         </div>
     </div>
@@ -224,15 +223,15 @@
                 <input type="hidden" name="act" value="order">
                 <div class="input-field relative">
                     <input placeholder=" " required type="text" name="name" id="name">
-                    <label for="name">Имя</label>
+                    <label for="name" class="text-color-6">Имя</label>
                 </div>
                 <div class="input-field relative">
                     <input placeholder=" " required type="text" name="email" id="email">
-                    <label for="email">Почта</label>
+                    <label for="email" class="text-color-5">Почта</label>
                 </div>
                 <div class="input-field relative">
                     <input placeholder=" " required type="tel" name="phone" id="phone">
-                    <label for="phone">Телефон</label>
+                    <label for="phone" class="text-color-10">Телефон</label>
                 </div>
             </form>
         </div>
@@ -251,19 +250,15 @@
 
             </div>
             <div class="choose flex-row">
-                <div class="arrow-container">
-                    <picture class="circle-arrow" id="">
-                        <source srcset="./images/circle-arrow.webp" type="image/webp">
-                        <img src="./images/circle-arrow.svg" alt="">
-                    </picture>
-                    <picture class="arrow-right" id="">
-                        <source srcset="./images/arrow-right.webp" type="image/webp">
-                        <img src="./images/arrow-right.svg" alt="">
-                    </picture>
+                <div class="circle-arrow">
+                    <img src="./images/circle-arrow.svg" alt="">
                 </div>
                 <a href="" class="justify-center">
                     выбрать пакет
                 </a>
+                <div class="arrow-right">
+                    <img src="./images/arrow.svg" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -287,9 +282,9 @@
 <section class="footer">
     <div class="container flex-row space-between">
         <div class="left-side flex-row">
-            <p>Политика использования<br>
-                cookie-файлов</p>
-            <p>Политика обработки<br> и защиты персональных данных</p>
+            <a>Политика использования<br>
+                cookie-файлов</a>
+            <a>Политика обработки<br> и защиты персональных данных</a>
         </div>
         <div class="right-side flex-row">
             <div class="social flex-row">
@@ -317,7 +312,7 @@
                 </a>
             </div>
             <div class="copyright-text">
-                <p>© 2022 Creative Hub 1.<br>Все права защищены.</p>
+                <a class="no-hover">© 2022 Creative Hub 1.<br>Все права защищены.</a>
             </div>
         </div>
     </div>

@@ -78,7 +78,7 @@
                 padding-top: 10px !important;
             }
             p {
-                font-size: 4vw !important;
+                font-size: $font-size-3-mob !important;
             }
         }
         .main-footer {
@@ -128,7 +128,7 @@
             margin-bottom: 20px;
             .name {
                 h3 {
-                    font-size: 6vw !important;
+                    font-size: $font-size-6-mob !important;
                 }
             }
         }
@@ -175,26 +175,30 @@
         }
     }
     .cover-block {
+        // border-radius: 50px !important;
+        margin-top: 40px !important;
         .cover {
             transform: scale(1.6) translate(-50px, 0);
         }
         .cover-text-container {
-            margin-top: 5% !important;
+            left: -3% !important;
+            top: -15% !important;
             .cover-text {
                 justify-content: flex-end !important;
                 width: 50% !important;
                 h1 {
-                    font-size: 4vw !important;
+                    font-size: 3.75vw !important;
                     // text-align: end;
                 }
                 .olga-s-span {
-                    font-size: 3.7vw !important;
+                    font-size: 3.75vw !important;
                 }
             }
         }
     }
     .svg-center {
         height: auto !important;
+        margin: 5% auto !important;
         .svg-container {
             height: auto !important;
             width: 90% !important;
@@ -202,10 +206,11 @@
     }
     .form {
         height: auto !important;
+        border-radius: 10px !important;
         .top-text {
             h3 {
                 max-width: 100% !important;
-                font-size: 6.5vw !important;
+                font-size: $font-size-6-mob !important;
             }
         }
         .bottom-text {
@@ -268,7 +273,7 @@
                 width: 100% !important;
                 max-width: 100% !important;
                 label {
-                    font-size: 5vw !important;
+                    font-size: $font-size-4-mob !important;
                     top: 15px !important;
                 }
 
@@ -277,10 +282,10 @@
                 //     top: 30px !important;
                 // }
                 input {
-                    font-size: 3.4vw;
+                    font-size: 5.4vw;
                     position: relative;
                     top: 0px !important;
-                    
+                    padding-top: 15px !important;
                     // height: 100%;
                     &:focus {
                         border-bottom: 1px solid $color-2;  
@@ -294,8 +299,8 @@
         }
     }
     .footer {
-        p {
-            font-size: 3vw !important;
+        a {
+            font-size: $font-size-1-mob !important;
         }
         .container {
             margin: 0 !important;
@@ -335,20 +340,32 @@
         }
     }
     .button {
+        top: 0px !important;
         justify-content: flex-end !important;
-        width: 50% !important;
+        // .button-container {
+        //     width: 14% !important;
+        // }
+        &:hover {
+            .circle-arrow {
+                transition: all .3s ease-out;
+                opacity: 1;
+            }
+            a {
+                transition: all .3s ease-out;
+                background-color: white;
+            }
+        }
         .button-container {
-            width: 14% !important;
+            left: 42px !important;
+            .arrow-right, .circle-arrow {
+                width: 40% !important;
+            }
         }
         a { 
-            display: inline-block !important;
-            vertical-align: middle !important;
-            width: 60% !important;
-            padding-top: 2.5% !important;
-            padding-bottom: 2.5% !important;
             // padding-top: 4px !important;
             // padding-bottom: 4px !important;
-            font-size: 3.5vw !important;
+            padding: 1.6% 30px;
+            font-size: $font-size-3-mob !important;
         }
         .arrow-right, .circle-arrow {
             vertical-align: middle !important;

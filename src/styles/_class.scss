@@ -21,7 +21,8 @@
 .text-color-8::selection {background: rgba(112, 161, 109, 0.5); }
 .text-color-9 { color: $color_9 !important; }
 .text-color-9::selection {background: rgba(246, 246, 246, 0.5); }
-
+.text-color-10 { color: $color_10 !important; }
+.text-color-10::selection {background: rgba(227, 150, 111, 0.5); }
 
 // Text weight controls
 .w-400 { font-weight: 400 !important; }
