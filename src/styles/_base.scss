@@ -97,13 +97,12 @@
         .nav-options {
             a {
                 margin-right: 70px;
-                p {
-                    font-size: $font-size-2;
-                }
+                font-size: $font-size-2;
+
             }
         }
         .change-language {
-            p {
+            a {
                 font-size: $font-size-2;
             }
         }
@@ -277,8 +276,7 @@
             &:hover:not(.text-item) {
                 picture:not(.project-6-image, .project-6-hover-image) {
                     // transform: scale(1.02);
-                    overflow: visible !important;
-                    filter: blur(6px);
+                    filter: blur(2.5px);
                     transition: all ease-in 0.3s;
                     // img {
                     //     border-radius: 50px !important;
@@ -477,3 +475,70 @@
         display: none;
     }
 }
+
+
+///////// SERVICES PAGE
+
+.services {
+    h3, p {
+        color: $color-2;
+        font-weight: 400;
+    }
+    .name-and-line {
+        margin-top: 30px;
+        margin-bottom: 80px;
+        height: auto;
+        align-items: center;
+        position: relative;
+        .name {
+            h3 {
+                position: relative;
+                top: 3px;
+                font-size: $font-size-6;
+                margin-bottom: 0;
+                margin-top: 0;
+            }
+        }
+
+
+    }
+    .name-and-line::after {
+        transition: all ease-in 0.15s; 
+        content: ' ';
+        position: absolute;
+        top: 86.5%;
+        left: -500px;
+        height: 1px;
+        width: 3000px;
+        background: $color-2;
+    }
+    .services-list {
+        .right-side {
+            width: 30%;
+        }
+        .right-side {
+            margin-right: 10%;
+            width: 40%;
+            p {
+                font-size: $font-size-4;
+            }
+        }
+        .service-item {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            max-width: 100%;
+            width: 100%;
+            align-items: center;
+            .left-side {
+                .circle-arrow-service, .theme-service {
+                    width: 20%;
+                }
+                p {
+                    font-size: 2.474vw;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+

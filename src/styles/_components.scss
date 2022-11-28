@@ -338,9 +338,59 @@
         border-radius: 50px;
         transition: all .3s ease-out;
         color: $color-2;
-        font-size: $font-size-3;
+        font-size: 20px;
     }  
 
 }
 
+.header-b {
+    a {
+        color: black;
+    }
 
+    .container {
+        align-items: center;
+        .nav-options {
+            align-items: center;
+            a {
+                margin-right: 70px;
+                font-size: $font-size-2;
+            }
+        }
+        .change-language {
+            align-items: center;
+            a {
+                font-size: $font-size-2;
+            }
+        }
+        .header-burger {
+            display: none;
+        }
+    }
+}
+
+.header-w {
+    a {
+        color: white;
+    }
+
+    .container {
+        align-items: center;
+        .nav-options {
+            align-items: center;
+            a {
+                margin-right: 70px;
+                font-size: $font-size-2;
+            }
+        }
+        .change-language {
+            align-items: center;
+            a {
+                font-size: $font-size-2;
+            }
+        }
+        .header-burger {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,57 @@
+@@include("./components/header-b.html", {}) 
+<section class="services">
+    <div class="container flex-col">
+        <div class="name-and-line">
+            <div class="name">
+                <h3>услуги</h3>
+            </div>
+        </div>
+        <div class="services-list">
+            @@include("./components/service-item.html", {
+                "svg-source": "marketing",
+                "right-text": "Составим долгосрочный план для достижения целей бизнеса",
+            }) 
+            @@include("./components/service-item.html", {
+                "svg-source": "branding",
+                "right-text": "Разработаем с нуля или переосмыслим ваш бренд",
+            }) 
+            @@include("./components/service-item.html", {
+                "svg-source": "research",
+                "right-text": "Проведём аудит бренда, оценим потенциалы продукта или услуги",
+            }) 
+            @@include("./components/service-item.html", {
+                "svg-source": "PR",
+                "right-text": "Проанализируем репутацию, повысим узнаваемость и сформируем имидж",
+            }) 
+            @@include("./components/service-item.html", {
+                "svg-source": "business",
+                "right-text": "Просегментируем рынок, выявим свободные ниши, переупакуем продуктовый порфтель и настроим воронки продаж",
+            }) 
+            @@include("./components/service-item.html", {
+                "svg-source": "SMM",
+                "right-text": "Подберём наиболее эффективные digital-каналы для продвижения",
+            }) 
+            <div class="service-item flex-row space-between">
+                <div class="left-side">
+                    <img src="./images/Advertising.svg" alt="">
+                </div>
+                <div class="right-side"><p>Обеспечим «прогрев», трафик и поток входящих</p>
+                </div>
+            </div>
+            @@include("./components/service-item.html", {
+                "svg-source": "pack",
+                "right-text": "Предложим оптимальный пакет услуг, чтобы уложиться в ваш бюджет и решить задачу",
+            }) 
+            <div class="service-item flex-row space-between">
+                <div class="left-side">
+                    <img src="./images/advisory.svg" alt="">
+                </div>
+                <div class="right-side"><p>Оценим вашу «боль» и нарисуем маршрут дальнейшего движения в проекте
+                    или бизнесе</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@@include("./components/form.html", {})  
+@@include("./components/footer.html", {})  
