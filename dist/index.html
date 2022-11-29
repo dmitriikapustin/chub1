@@ -31,12 +31,12 @@
     <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
     <link rel="manifest" href="favicons/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileColor" content="#6970B1">
     <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#6970B1">
 </head>
 
-<body onload="init()" id="body">
+<body id="body">
 
 
 
@@ -89,7 +89,7 @@
             <div class="left-side">
                 <p>Creative Hub 1</p>
             </div>
-            <div class="right-side flex-row">
+            <div class="right-side flex-row no-wrap">
                 <div class="social">
                     <a href="">
                         <svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -129,11 +129,11 @@
 <section class="projects">
     <div class="container">
         <div class="projects flex-col">
-            <div class="top-content flex-row space-between">
+            <div class="top-content flex-row space-between no-wrap">
                 <div class="name">
                     <h3>проекты</h3>
                 </div>
-                <div class="button flex-row">
+                <div class="button flex-row no-wrap">
     <div class="button-container">
         <div class="circle-arrow">
             <img src="./images/circle-arrow.svg" alt="">
@@ -150,10 +150,8 @@
             </div>
             <div class="project-items flex-row">
                 <div class="project-item">
-                    <picture class="project-1" id="">
-                        <source srcset="./images/consul.webp" type="image/webp">
-                        <img src="./images/consul.png" alt="">
-                    </picture>
+                    <img src="./images/consul.png" alt="">
+                    <div class="description"><p>Краткое описание проекта</p></div>
                 </div>
                 <div class="project-item text-item flex-col">
                     <p>всегда начинайте<br>
@@ -165,24 +163,18 @@
                         не оставит вас!</p>
                 </div>
                 <div class="project-item">
-                    <picture class="project-3" id="">
-                        <source srcset="./images/rein.webp" type="image/webp">
-                        <img src="./images/rein.png" alt="">
-                    </picture>
+                    <img src="./images/rein.png" alt="">
+                    <div class="description"><p>Краткое описание проекта</p></div>
                 </div>
                 <div class="project-item">
-                    <picture class="project-4" id="">
-                        <source srcset="./images/armia.webp" type="image/webp">
-                        <img src="./images/armia.png" alt="">
-                    </picture>
+                    <img src="./images/armia.png" alt="">
+                    <div class="description"><p>Краткое описание проекта</p></div>
                 </div>
                 <div class="project-item">
-                    <picture class="project-5" id="">
-                        <source srcset="./images/kirill-k.webp" type="image/webp">
-                        <img src="./images/kirill-k.png" alt="">
-                    </picture>
+                    <img src="./images/kirill-k.png" alt="">
+                    <div class="description"><p>Краткое описание проекта</p></div>
                 </div>
-                <div class="project-item project-6">
+                <div class="project-item project-6 light">
                     <picture class="project-6-image" id="">
                         <source srcset="./images/lightning-image.webp" type="image/webp">
                         <img src="./images/lightning-image.png" alt="">
@@ -249,7 +241,7 @@
                 </div>    
 
             </div>
-            <div class="choose flex-row">
+            <div class="button choose flex-row">
                 <div class="circle-arrow">
                     <img src="./images/circle-arrow.svg" alt="">
                 </div>
@@ -317,7 +309,7 @@
         </div>
     </div>
 </section>
-<!-- <script src="scripts.min.js?ver=<?= rand(1, 9999); ?>"></script> -->
+<script src="scripts.min.js?ver=<?= rand(1, 9999); ?>"></script>
 </body>
 
 </html>  

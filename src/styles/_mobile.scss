@@ -82,6 +82,7 @@
             }
         }
         .main-footer {
+            padding-bottom: 8vh;
             .left-side {
                 width: 40% !important;
             }
@@ -98,14 +99,14 @@
                 .social{
                     a {
                         svg {
-                            width: 65% !important;
+                            width: 25px !important;
                         }
                     }
                 }
                 .chat {
                     a {
                         svg {
-                            width: 90% !important;
+                            width: 50px !important;
                         }
                     }
                 }
@@ -123,6 +124,7 @@
         }
     }
     .projects {
+        padding: 5% 0;
         .top-content {
             margin-top: 10px;
             margin-bottom: 20px;
@@ -158,13 +160,10 @@
             // }
         }
         .text-item {
-            margin-top: 6px !important;
-            margin-bottom: 6px !important;
+            margin-top: 25px !important;
+            margin-bottom: 25px !important;
             p {
-                width: 100% !important;
-                margin-top: 0 !important;
-                margin-bottom: 8.5px !important;
-                margin-left: 50px !important;
+                width: 80% !important;
                 font-size: 7vw !important;
                 line-height: 1 !important;
             }
@@ -206,7 +205,8 @@
     }
     .form {
         height: auto !important;
-        border-radius: 10px !important;
+        border-radius: 30px !important;
+        margin-top: 25% !important;
         .top-text {
             h3 {
                 max-width: 100% !important;
@@ -214,21 +214,6 @@
             }
         }
         .bottom-text {
-            .choose {
-                .arrow-container {
-                    width: 11.8% !important;
-                }
-                a { 
-                    display: inline-block !important;
-                    vertical-align: middle !important;
-                    width: 60% !important;
-                    padding-top: 2.5% !important;
-                    padding-bottom: 2.5% !important;
-                    // padding-top: 4px !important;
-                    // padding-bottom: 4px !important;
-                    font-size: 3.5vw !important;
-                }
-                }
             .checkbox-item {
                 width: 50% !important;
             }
@@ -272,9 +257,10 @@
             .input-field {
                 width: 100% !important;
                 max-width: 100% !important;
+                margin: 10px 0;
                 label {
                     font-size: $font-size-4-mob !important;
-                    top: 15px !important;
+                    top: 10px !important;
                 }
 
                 // input[type="text"] div::placeholder,  input[type="tel"] div::placeholder {
@@ -292,7 +278,7 @@
                       }
 
                     &:focus, &:not(:placeholder-shown), &:-webkit-autofill {
-                      &+label { top: 0px !important; font-size: 40% !important; }
+                      &+label { top: -5px !important; left: 10px !important; font-size: 60% !important; }
                     }
                   }
             }
@@ -340,35 +326,11 @@
         }
     }
     .button {
-        top: 0px !important;
+        top: -5px !important;
         justify-content: flex-end !important;
-        // .button-container {
-        //     width: 14% !important;
-        // }
-        &:hover {
-            .circle-arrow {
-                transition: all .3s ease-out;
-                opacity: 1;
-            }
-            a {
-                transition: all .3s ease-out;
-                background-color: white;
-            }
-        }
-        .button-container {
-            left: 42px !important;
-            .arrow-right, .circle-arrow {
-                width: 40% !important;
-            }
-        }
         a { 
-            // padding-top: 4px !important;
-            // padding-bottom: 4px !important;
-            padding: 1.6% 30px;
+            padding: 10px 20px;
             font-size: $font-size-3-mob !important;
-        }
-        .arrow-right, .circle-arrow {
-            vertical-align: middle !important;
         }
     }
 }
