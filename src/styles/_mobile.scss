@@ -21,7 +21,7 @@
             }
         }
     } 
-    .header {
+    .header, .header-b, .header-w {
         .nav-options, .change-language {
             display: none;
         }
@@ -33,17 +33,7 @@
         }
     }
 
-    .header-b {
-        .nav-options, .change-language {
-            display: none;
-        }
-        .header-burger {
-            display: block !important;
-            svg {
-                width: 24px !important;
-            }
-        }
-    }
+
 
     ///////// MAIN PAGE
 
@@ -165,17 +155,21 @@
             width: 100% !important;
             margin-top: 6px !important;
             margin-bottom: 6px !important;
-            &:hover {
-                picture {
-                transform: scale(1) !important;
-                filter: blur(0) !important;
-                transition: all ease-in 0.15s;
+            .description {
+                p {
+                    font-size: $font-size-4-mob !important;
                 }
-                &::after {
+            }
+            &:hover:not(.text-item, .light) {
+                transition: all 0.2s linear;
+                img {
+                    transform: scale(1) !important;
+                    filter: blur(0px) !important;
+                }
+                .description {
+                    transition: all 0.2s linear;
                     opacity: 0 !important;
-                    transition: all ease-in 0.15s;
-                    // filter: blur(0px) !important;
-                } 
+                }
             }
             // picture {
             //     img {
@@ -268,7 +262,6 @@
             }
         }
     }
-
     .form {
         height: auto !important;
         border-radius: 30px !important;
@@ -359,12 +352,44 @@
         }
     }
 
+    .top-content {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        .name {
+            h3 {
+                font-size: $font-size-6-mob !important;
+            }
+        }
+    }
+
     ///////// SERVICES PAGE
+
+    .services { 
+        .svg-item {
+            width: fit-content !important;
+            img {
+                height: 40px !important;
+            }
+        }
+        .services-list {
+            .right-side {
+                width: 100% !important;
+                p {
+                    font-size: 3.75vw !important;
+                }
+            }
+        }
+    }
+
 
     ///////// PROJECT PAGE
 
     .projects-page { 
+        // max-width: 100% !important;
         padding: 5% 0;
+        .projects-container {
+            flex-direction: column !important;
+        }
         .top-content {
             margin-top: 10px;
             margin-bottom: 20px;
@@ -374,38 +399,27 @@
                 }
             }
         }
-        .width-67 {
-            width: 100% !important;
-            .project-block {
-                width: 100% !important;            }
-        }
-        .project-block {
-            width: 100% !important;
-            margin-top: 6px !important;
-            margin-bottom: 6px !important;
+
+        .projects-block {
+            flex-direction: column !important;
+            .width-67 {
+                width: 100% !important;
+                .project-block {
+                    width: 100% !important;            }
+            }
             .heading {
+                // width: 100% !important;
                 h3 {
-                    width: 100% !important;
+    
                     font-size: $font-size-6-mob;
                 }
             }
-            // &:hover {
-            //     picture {
-            //     transform: scale(1) !important;
-            //     filter: blur(0) !important;
-            //     transition: all ease-in 0.15s;
-            //     }
-            //     &::after {
-            //         opacity: 0 !important;
-            //         transition: all ease-in 0.15s;
-            //         // filter: blur(0px) !important;
-            //     } 
-            // }
-            // picture {
-            //     img {
-            //         min-height: 143px !important;
-            //     }
-            // }
+            .project-block {
+                width: 100% !important;
+                margin-top: 6px !important;
+                margin-bottom: 6px !important;
+                border-radius: 20px !important;
+            }
         }
     }
 }

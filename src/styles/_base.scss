@@ -274,11 +274,13 @@
             }
 
             &:hover:not(.text-item, .light) {
+                transition: all 0.2s linear;
                 img {
                     transform: scale(1.3);
                     filter: blur(5px);
                 }
                 .description {
+                    transition: all 0.2s linear;
                     opacity: 1;
                 }
             }
@@ -462,7 +464,22 @@
     }
 }
 
-.header {
+.header, .header-b, .header-w {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    .nav-options {
+        a {
+            margin-right: 70px;
+            font-size: $font-size-2;
+
+        }
+    }
+    .change-language {
+        a {
+            font-size: $font-size-2;
+        }
+    }
     .header-burger {
         display: none;
     }
@@ -476,32 +493,71 @@
         color: $color-2;
         font-weight: 400;
     }
+    .top-content {
+        margin-left: 75px;
+    }
     .services-list {
         .right-side {
             width: 30%;
         }
         .right-side {
-            margin-right: 10%;
+            // margin-right: 10%;
             width: 40%;
             p {
                 font-size: $font-size-4;
             }
         }
         .service-item {
-            margin-top: 20px;
-            margin-bottom: 20px;
-            max-width: 100%;
-            width: 100%;
-            align-items: center;
-            .left-side {
-                .circle-arrow-service, .theme-service {
-                    width: 20%;
-                }
-                p {
-                    font-size: 2.474vw;
-                    font-weight: 500;
+            &-background {
+                height: 100%;
+                width: 100%;
+                display: block;
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                border-radius: 1000px;
+                opacity: 0;
+                transition: all 0.2s linear;
+                
+            }
+            &:hover {
+                .service-item-background {
+                    opacity: 1;
                 }
             }
+            & {
+                border-radius: 1000px;
+                margin-top: 80px;
+                margin-bottom: 20px;
+                max-width: 100%;
+                width: 100vw;
+                align-items: center;
+                position: relative;
+                padding: 20px 75px;
+                // background-color: $color-7;
+                &::after {
+                    transition: all ease-in 0.15s; 
+                    content: ' ';
+                    position: absolute;
+                    top: 100%;
+                    left: -500px;
+                    height: 1px;
+                    width: 3000px;
+                    background: $color-2;
+                }
+                .left-side {
+                    // width: 50%;
+                    .svg-item {
+                        width: 80%;
+                    }
+                    p {
+                        font-size: 2.474vw;
+                        font-weight: 500;
+                    }
+                }
+            }
+            
         }
     }
 }
@@ -517,6 +573,7 @@
         margin-left: 50px;
     }
     .heading {
+        width: 100%;
         h3 {
             font-size: $font-size-6;
             margin-top: 80px;
@@ -530,11 +587,13 @@
         }
     }
     .projects-container {
+        display: flex;
+        flex-direction: row;
         width: 100%;
         justify-content: space-between;
         .project-block {
             width: calc(33.3333% - 15px);
-            height: calc(33.3333% - 15px);
+            // height: calc(33.3333% - 15px);
             transition: all ease-in 0.15s; 
             position: relative;
             overflow: hidden;
@@ -549,10 +608,24 @@
                 margin: 0 20%;
                 display: flex;
                 align-items: center;
-                p {
-                    color: $color-1;
-                    font-size: $font-size-4;
-                    height: fit-content;
+
+            }
+            img {
+                transition: all 0.2s linear;
+                // width: 100%;
+                // height: auto;
+            }
+
+            &:hover {
+                transition: all 0.2s linear;
+                .img-hover {
+                    transition: all 0.2s linear;
+                    transform: scale(1.3);
+                    filter: blur(5px);
+                }
+                .description {
+                    transition: all 0.2s linear;
+                    opacity: 1;
                 }
             }
         }

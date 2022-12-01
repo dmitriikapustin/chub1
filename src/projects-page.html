@@ -1,6 +1,12 @@
-@@include("./components/header-b.html", {}) 
+@@include("./components/header.html", {
+    "meta-title": "chub",
+    "meta-description": " ",
+    "meta-keywords": " "
+})
+
 <section class="projects-page">
     <div class="container flex-col">
+        @@include("./components/header-b.html", {}) 
         <div class="top-content flex-row space-between no-wrap">
             <div class="name">
                 <h3>проекты</h3>
@@ -11,41 +17,41 @@
                         "text": "по&nbsp;типу&nbsp;услуги"
                     }) 
                 </div>
-                <div class="second-button">
+                <!-- <div class="second-button">
                     @@include("./components/button.html", {
                         "text": "по&nbsp;типу&nbsp;клиента"
                     }) 
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="projects-block flex-col">
             <div class="heading">
                 <h3>B2B</h3>
             </div>
-            <div class="projects-container flex-row">
+            <div class="projects-container">
                 <div class="project-block">
-                    <img src="./images/p-consul.png" alt="">
-                    <div class="description"><p>Краткое описание проекта</p></div>
+                    <img class="img-hover" src="./images/p-consul.jpg" alt="">
+                    <div class="description"><img src="./images/hover-branding.svg" alt=""></div>
                 </div>
                 <div class="project-block">
-                    <img src="./images/p-a.png" alt="">
-                    <div class="description"><p>Краткое описание проекта</p></div>
+                    <img class="img-hover" src="./images/p-a.jpg" alt="">
+                    <div class="description"><img src="./images/hover-branding.svg" alt=""></div>
                 </div>
                 <div class="project-block">
-                    <img src="./images/p-meditation.png" alt="">
-                    <div class="description"><p>Краткое описание проекта</p></div>
+                    <img class="img-hover" src="./images/mediation.jpg" alt="">
+                    <div class="description"><img src="./images/hover-branding.svg" alt=""></div>
                 </div>
                 <div class="project-block">
-                    <img src="./images/p-ownex.png" alt="">
-                    <div class="description"><p>Краткое описание проекта</p></div>
+                    <img class="img-hover" src="./images/ownex.jpg" alt="">
+                    <div class="description"><img src="./images/hover-branding.svg" alt=""></div>
                 </div>
                 <div class="project-block">
-                    <img src="./images/p-rein-expo.png" alt="">
-                    <div class="description"><p>Краткое описание проекта</p></div>
+                    <img class="img-hover" src="./images/reinexpo.jpg" alt="">
+                    <div class="description"><img src="./images/hover-branding.svg" alt=""></div>
                 </div>
                 <div class="project-block">
-                    <img src="./images/p-interform.png" alt="">
-                    <div class="description"><p>Краткое описание проекта</p></div>
+                    <img class="img-hover" src="./images/interform.jpg" alt="">
+                    <div class="description"><img src="./images/hover-branding.svg" alt=""></div>
                 </div>
             </div>
         </div>
@@ -53,14 +59,14 @@
             <div class="heading">
                 <h3>B2G</h3>
             </div>
-            <div class="projects-container width-67 flex-row">
+            <div class="projects-container width-67">
                 <div class="project-block">
-                    <img src="./images/p-minfin.png" alt="">
-                    <div class="description"><p>Краткое описание проекта</p></div>
+                    <img class="img-hover" src="./images/minfin.jpg" alt="">
+                    <div class="description"><img src="./images/hover-branding.svg" alt=""></div>
                 </div>
                 <div class="project-block">
-                    <img src="./images/p-clear-street.png" alt="">
-                    <div class="description"><p>Краткое описание проекта</p></div>
+                    <img class="img-hover" src="./images/clear-street.jpg" alt="">
+                    <div class="description"><img src="./images/hover-branding.svg" alt=""></div>
                 </div>
             </div>
         </div>
@@ -68,18 +74,18 @@
             <div class="heading">
                 <h3>B2С</h3>
             </div>
-            <div class="projects-container flex-row">
+            <div class="projects-container">
                 <div class="project-block">
-                    <img src="./images/p-mango.png" alt="">
-                    <div class="description"><p>Краткое описание проекта</p></div>
+                    <img class="img-hover" src="./images/mr-green.jpg" alt="">
+                    <div class="description"><img src="./images/hover-branding.svg" alt=""></div>
                 </div>
                 <div class="project-block">
-                    <img src="./images/p-armia.png" alt="">
-                    <div class="description"><p>Краткое описание проекта</p></div>
+                    <img class="img-hover" src="./images/p-armia.jpg" alt="">
+                    <div class="description"><img src="./images/hover-branding.svg" alt=""></div>
                 </div>
                 <div class="project-block">
-                    <img src="./images/team.png" alt="">
-                    <div class="description"><p>Краткое описание проекта</p></div>
+                    <img class="img-hover" src="./images/chub-members.jpg" alt="">
+                    <div class="description"><img src="./images/hover-branding.svg" alt=""></div>
                 </div>
 
             </div>
@@ -88,14 +94,14 @@
             <div class="heading">
                 <h3>персональный бренд</h3>
             </div>
-            <div class="projects-container width-67 flex-row">
+            <div class="projects-container width-67">
                 <div class="project-block">
-                    <img src="./images/p-kirill.png" alt="">
-                    <div class="description"><p>Краткое описание проекта</p></div>
+                    <img class="img-hover" src="./images/p-kirill.jpg" alt="">
+                    <div class="description"><img src="./images/hover-branding.svg" alt=""></div>
                 </div>
                 <div class="project-block">
-                    <img src="./images/p-danilin.png" alt="">
-                    <div class="description"><p>Краткое описание проекта</p></div>
+                    <img class="img-hover" src="./images/p-danilin.jpg" alt="">
+                    <div class="description"><img src="./images/hover-branding.svg" alt=""></div>
                 </div>
             </div>
         </div>

@@ -1,6 +1,13 @@
-@@include("./components/header-b.html", {}) 
+@@include("./components/header.html", {
+    "meta-title": "chub",
+    "meta-description": " ",
+    "meta-keywords": " "
+})
 <section class="services">
-    <div class="container flex-col">
+    <div class="container-100 flex-col">
+        <div class="container">
+            @@include("./components/header-b.html", {}) 
+        </div>
         <div class="top-content flex-row space-between no-wrap">
             <div class="name">
                 <h3>услуги</h3>
@@ -9,43 +16,58 @@
         </div>
         <div class="services-list">
             @@include("./components/service-item.html", {
+                "background": "style='background: #6970B1'",
                 "svg-source": "marketing",
                 "right-text": "Составим долгосрочный план для достижения целей бизнеса",
             }) 
             @@include("./components/service-item.html", {
+                "background": "style='background: #9BCECA'",
                 "svg-source": "branding",
                 "right-text": "Разработаем с нуля или переосмыслим ваш бренд",
             }) 
             @@include("./components/service-item.html", {
+                "background": "style='background: #70A16D'",
                 "svg-source": "research",
                 "right-text": "Проведём аудит бренда, оценим потенциалы продукта или услуги",
             }) 
             @@include("./components/service-item.html", {
+                "background": "style='background: #CD93AF'",
                 "svg-source": "PR",
                 "right-text": "Проанализируем репутацию, повысим узнаваемость и сформируем имидж",
             }) 
             @@include("./components/service-item.html", {
+                "background": "style='background: #F1C376'",
                 "svg-source": "business",
                 "right-text": "Просегментируем рынок, выявим свободные ниши, переупакуем продуктовый порфтель и настроим воронки продаж",
             }) 
             @@include("./components/service-item.html", {
+                "background": "style='background: #6970B1'",
                 "svg-source": "SMM",
                 "right-text": "Подберём наиболее эффективные digital-каналы для продвижения",
             }) 
             <div class="service-item flex-row space-between">
                 <div class="left-side">
-                    <img src="./images/Advertising.svg" alt="">
+                    <div class="svg-item">
+                        <a href="">
+                            <img src="./images/Advertising.svg" alt="">
+                        </a>
+                    </div>    
                 </div>
                 <div class="right-side"><p>Обеспечим «прогрев», трафик и поток входящих</p>
                 </div>
             </div>
             @@include("./components/service-item.html", {
+                "background": "style='background: #6970B1'",
                 "svg-source": "pack",
                 "right-text": "Предложим оптимальный пакет услуг, чтобы уложиться в ваш бюджет и решить задачу",
             }) 
             <div class="service-item flex-row space-between">
                 <div class="left-side">
-                    <img src="./images/advisory.svg" alt="">
+                   <div class="svg-item">
+                        <a href="">
+                            <img src="./images/advisory.svg" alt="">
+                        </a>
+                   </div>
                 </div>
                 <div class="right-side"><p>Оценим вашу «боль» и нарисуем маршрут дальнейшего движения в проекте
                     или бизнесе</p>

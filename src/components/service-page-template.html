@@ -1,0 +1,26 @@
+@@include("./header.html", {
+    "meta-title": "chub",
+    "meta-description": " ",
+    "meta-keywords": " "
+})
+<section class="service-page">
+    <div @@background class="service-page-background"></div>
+    <div class="container">
+        @@if (textcolor === "style='color: black'") {
+            @@include("./header-b.html", {}) 
+        }
+        @@if (textcolor === "style='color: white'") {
+            @@include("./header-w.html", {}) 
+        }
+        <div class="center-content flex-col">
+            <p @@textcolor>услуги</p>
+            <div class="service-type-svg">
+                <img src="./images/@@service-type-svg.svg" alt="">
+            </div>
+        </div>
+        <div class="bottom-right-text">
+            <p @@textcolor @@uniquepageclass>@@bottom-right-text</p>
+        </div>
+    </div>
+</section>
+

@@ -21,18 +21,22 @@
 @import "components";
 
 // 7. Main file of project
+@import "grid";
+
+// 8. Main file of project
 @import "base";
 
-// 8. Desktop styles for 1600 and more
+// 9. Services pages styles
+@import "services-pages";
+
+// 10. Desktop styles for 1600 and more
 @import "desktop_b";
 
-
-
-// 10. Mobile styles
+// 11. Mobile styles
 @import "preloader";
 
-// 11. Default classes
+// 12. Default classes
 @import "class";
 
-// 12. Mobile styles
+// 13. Mobile styles
 @import "mobile";
