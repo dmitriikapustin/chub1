@@ -1,0 +1,91 @@
+@media screen and (max-width: 800px) { 
+    .container {
+        width: calc(100vw - 40px) !important;
+    }
+
+    .header-b {
+        height: fit-content !important;
+    }
+    .service-page { 
+        .bottom-right-text {
+            height: auto !important;
+            p {
+                font-size: $font-size-4-mob !important;
+                width: 60% !important;
+            }
+            .pr {
+                width: 50% !important;
+            }
+        }
+        .center-content {
+            margin-top: 0 !important;
+            p {
+                font-size: 10vw;
+            }
+            .service-type-svg {
+                width: 90% !important; 
+            }
+        }
+    }
+    .block-options { 
+        h2 {
+            font-size: $font-size-6-mob;
+        }
+        .option-item, .heading {
+            padding: 10px 20px !important;
+        }
+        .heading {
+            flex-direction: column !important;
+            align-items: flex-start !important;
+            p {
+                font-size: $font-size-4-mob;
+            }
+        }
+        &:hover {
+            .option-item-background {
+                opacity: 0 !important;
+            }
+        }
+        .options {
+            .option {
+                p {
+                    font-size: $font-size-4-mob !important;
+                }
+                .special-after:after {
+                    top: 190% !important;
+                }
+            }
+        }
+    }
+
+
+    .center-text-block { 
+        margin-top: 30px;
+        h3 {
+            font-size: $font-size-6-mob;
+        }
+
+        p, span {
+            color: $color-2;
+            font-size: $font-size-4-mob;
+        }
+    }
+
+    .rounded-block { 
+        .container {
+            flex-direction: column !important;
+        }
+        .left-side, .right-side {
+            width: 100% !important;
+        }
+        .right-side {
+            // height: 100% !important;
+            .rounded-content {
+                p, a {
+                    font-size: $font-size-4-mob !important;
+                }
+            }
+        }
+    }
+    
+}

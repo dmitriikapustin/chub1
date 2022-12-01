@@ -140,7 +140,7 @@
                 padding: 20px 75px;
             }
             &-background {
-                height: 100%;
+                height: 99.9%;
                 width: 100%;
                 display: block;
                 content: '';
@@ -150,7 +150,6 @@
                 border-radius: 1000px;
                 opacity: 0;
                 transition: all 0.2s linear;
-                
             }
             &:hover {
                 .option-item-background {
@@ -169,7 +168,7 @@
                     transition: all ease-in 0.15s; 
                     content: ' ';
                     position: absolute;
-                    top: 70px;
+                    top: 287%;
                     left: -500px;
                     height: 1px;
                     width: 3000px;
@@ -205,4 +204,73 @@
         justify-content: center;
         margin: 0 auto;
     }
+}
+
+.scheme-block {
+    p, h2 {
+        color: $color-2;
+    }
+    h2 {
+        font-size: $font-size-6;
+    }
+
+    .scheme {
+        width: 100%;
+        .first-level, .second-level, .third-level {
+            width: 100%;
+        }
+        .second-level {
+            justify-content: center;
+        }
+        .number {
+            font-size: $font-size-2;
+        }
+        .number {
+            // width: 10%;
+            font-weight: 600;
+            // margin-right: 5px;
+        }
+        .task {
+            font-size: 1.771vw;
+            width: 55%;
+            font-weight: 500;
+        }
+        .description {
+            width: 40%;
+            font-weight: 200;
+            font-size: 0.938vw;
+        }
+        .scheme-item {
+            width: 33.33%;
+            border-radius: 1000px;
+            border: 1px solid black;
+            height: auto;
+            // justify-content: center;
+            // align-items: center;
+        }
+        .number-container {
+            width: calc(15% - 5px);
+            margin-right: 5px;
+            margin-top: 30px;
+            justify-content: flex-end;
+        }
+        .texts-container {
+            display: flex;
+            height: auto;
+            align-items: center;
+            width: 85%;
+        }
+        .si-7 {
+            .task {
+                width: 85% !important;
+            }
+        }
+        .first-level {
+            .scheme-item {
+
+            }
+        }
+
+    }
+
 }
