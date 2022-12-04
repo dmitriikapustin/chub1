@@ -247,6 +247,8 @@
     }
 
     .scheme {
+        display: flex;
+        flex-wrap: nowrap;
         width: 100%;
         .first-level, .second-level, .third-level {
             width: 100%;
@@ -273,7 +275,10 @@
             font-size: 0.938vw;
         }
         .scheme-item {
-            width: 33.33%;
+            min-width: 15%;
+            max-width: 33.33%;
+            width: fit-content;
+            padding: 0 30px;
             border-radius: 1000px;
             border: 1px solid black;
             height: auto;
