@@ -1,4 +1,4 @@
-@@include("./header.html", {
+@@include("../common-blocks/header.html", {
     "meta-title": "chub",
     "meta-description": " ",
     "meta-keywords": " "
@@ -7,10 +7,10 @@
     <div @@background class="service-page-background"></div>
     <div class="container">
         @@if (textcolor === "style='color: black'") {
-            @@include("./header-b.html", {}) 
+            @@include("../common-blocks/header-b.html", {}) 
         }
         @@if (textcolor === "style='color: white'") {
-            @@include("./header-w.html", {}) 
+            @@include("../common-blocks/header-w.html", {}) 
         }
         <div class="center-content flex-col">
             <p @@textcolor>услуги</p>

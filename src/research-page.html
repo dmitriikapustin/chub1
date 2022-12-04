@@ -1,0 +1,141 @@
+@@include("./components/services-pages/service-page-template.html", {
+    "uniquepageclass" : "class='research'",
+    "textcolor" : "style='color: white'",
+    "background" : "style='background-image: url(./images/pr-bc.jpg)'",
+    "service-type-svg" : "research-page",
+    "bottom-right-text" : "Срочное может задушить важное<br>© Марисса Майер"
+})
+<section class="block-options">
+    <div class="container-100 flex-col">
+        @@include("./components/common-blocks/service-name.html", { 
+            "name" : "исследования",
+            "description" : "повышают вероятность успеха вашего продукта и значительно <span class='text-color-8'>упрощают жизнь бизнесу</span>. Они полезны:"
+        })
+        <div class="options flex-col">
+            @@include("./components/common-blocks/option-item.html", {
+                "background": "style='background: #70A16D'",
+                "option-text": "<p>01&nbsp;&nbsp;&nbsp;для разработки <span>маркетинговой и PR-стратегий,</span></p>"
+            }) 
+            @@include("./components/common-blocks/option-item.html", {
+                "background": "style='background: #70A16D'",
+                "option-text": "<p>02&nbsp;&nbsp;&nbsp;при создании <span>бренд-платформы,</span></p>"
+            }) 
+            @@include("./components/common-blocks/option-item.html", {
+                "background": "style='background: #70A16D'",
+                "option-text": "<p>03&nbsp;&nbsp;&nbsp;для <span>поиска целевой аудитории</span> и <span>новых ниш</span> на рынке,</p>"
+            }) 
+            @@include("./components/common-blocks/option-item.html", {
+                "background": "style='background: #70A16D'",
+                "option-text": "<p>04&nbsp;&nbsp;&nbsp;при поиске <span>продуктовых и маркетинговых идей,</span></p>"
+            }) 
+            @@include("./components/common-blocks/option-item.html", {
+                "background": "style='background: #70A16D'",
+                "option-text": "<p>05&nbsp;&nbsp;&nbsp;при <span>тестировании</span> этих идей <span>на жизнеспособность,</span></p>"
+            }) 
+            @@include("./components/common-blocks/option-item.html", {
+                "background": "style='background: #70A16D'",
+                "option-text": "<p>06&nbsp;&nbsp;&nbsp;при <span>реализации новых продуктов,</span></p>"
+            }) 
+            @@include("./components/common-blocks/option-item.html", {
+                "background": "style='background: #70A16D'",
+                "option-text": "<p>07&nbsp;&nbsp;&nbsp;для <span>оценки результатов</span> кампаний <span>по продвижению,</span></p>"
+            }) 
+            @@include("./components/common-blocks/option-item.html", {
+                "background": "style='background: #70A16D'",
+                "option-text": "<p>08&nbsp;&nbsp;&nbsp;для дальнейшего <span>развития продуктов,</span></p>"
+            }) 
+            @@include("./components/common-blocks/option-item.html", {
+                "background": "style='background: #70A16D'",
+                "option-text": "<p>09&nbsp;&nbsp;&nbsp;<span>продвижение</span> продукта/компании/персоны через работу с аудиторией</p>"
+            }) 
+        </div>
+    </div>
+</section> 
+
+<section class="arrow-scheme">
+    <div class="flex-col">
+        @@include("./components/services-pages/scheme-row-item.html", {
+            "rowitem" : "scheme-row-1-rs" 
+        })  
+        @@include("./components/services-pages/scheme-row-item.html", {
+            "rowitem" : "scheme-row-2-rs" 
+        })  
+        @@include("./components/services-pages/scheme-row-item.html", {
+            "rowitem" : "scheme-row-3-rs" 
+        })  
+    </div>
+</section>
+
+<section class="center-text-block green-bc">
+    <div class="container">
+        <div class="center-text col-desk-8 col-mob-2">
+           <p>Если вам кажется, что исследования бесполезны, <span>сравните их стоимость</span> с деньгами, потраченными <span>на производство, запуск и рекламу продукта.</span> Умножьте сумму на три.<br><br>
+            Когда первая попытка не принесёт результата, весь процесс придётся пройти заново, но ещё и включая оплату исследования.<br><br>
+            Как говорится, скупой платит дважды. В этом случае троекратно.</p>
+        </div>
+    </div>
+</section>
+
+<section class="researches">
+    <div class="container flex-row">
+        <div class="left-side">
+            <h2>исследования<br>бывают</h2>
+        </div>
+        <div class="right-side flex-col">
+            <div class="research-item flex-col">
+                <h2 class='text-color-8'>качественные</h2>
+                <p>глубиное интервью,<br>фокус-группа</p>
+            </div>
+            <div class="research-item flex-col">
+                <h2 class='text-color-6'>количественные</h2>
+                <p>опрос, эксперимент</p>
+            </div>
+            <div class="research-item flex-col">
+                <h2 class='text-color-3'>смешанные</h2>
+                <p>смешанные hall-test, тайный покупатель,
+                    кабинетное исследование</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="desk-research">
+    <div class="container">
+        @@include("./components/common-blocks/service-name-only-h.html", { 
+            "tasks" : "кабинетное исследование<br>помогает:"
+        })
+        <div class="help-options flex-row">
+            <div class="help-option">
+                <p>составить общее представление о рынке</p>
+                <div style="background-color: #70A16D" class="circle-1 circle"></div>
+            </div>
+            <div class="help-option">
+                <p>провести конкурентный анализ</p>
+                <div style="background-color: #F1C376;" class="circle-2 circle"></div>
+            </div>
+            <div class="help-option">
+                <p>выявить основные каналы сбыта и продвижения<br>продукции</p>
+                <div style="background-color: #E09679;" class="circle-3 circle"></div>
+            </div>
+            <div class="help-option">
+                <p>проанализировать ценовую политику на рынке</p>
+                <div style="background-color: #CD93AF;" class="circle-4 circle"></div>
+            </div>
+            <div class="help-option">
+                <p>провести анализ публикаций в СМИ по теме и др.</p>
+                <div style="background-color: #9BCECA;" class="circle-5 circle"></div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+@@include("./components/common-blocks/center-text-block.html", {
+    "text" : "<p>Самым простым и действенным считается <span class='text-color-8'>кабинетное исследование</span> — сбор и анализ информации из открытых и закрытых источников. Оно позволяет <span>быстро</span> и без лишних затрат понять контекст, <span>построить гипотезы и сделать первые выводы.</span> <span class='text-color-6'>Не требует взаимодействия с потребителями,</span> может быть проведён самостоятельно.</p>"
+}) 
+
+@@include("./components/services-pages/rounded-block.html", {})  
+@@include("./components/common-blocks/form.html", {
+    "heading" : "расскажите о задачах,"
+})  
+@@include("./components/common-blocks/footer.html", {}) 

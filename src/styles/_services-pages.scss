@@ -50,6 +50,8 @@
 }
 
 .rounded-block {
+    margin-top: 60px;
+    margin-bottom: 60px;
     .container {
     }
     .left-side, .right-side {
@@ -112,6 +114,8 @@
 }
 
 .block-options {
+    margin-top: 60px;
+    margin-bottom: 100px;
     h2, p, span {
         color: $color-2;
 
@@ -120,17 +124,8 @@
         font-style: italic;
         font-weight: 400;
     }
-    h2 {
-        font-size: $font-size-6;
-        font-weight: 400;
-    }
     .heading {
-        align-items: center;
         padding: 20px 75px;
-        p {
-            font-size: $font-size-4;
-            font-weight: 400;
-        }
     }
     .options {
         .option-item {
@@ -157,29 +152,38 @@
                 }
             }
             .option {
+                position: relative;
                 p {
                     font-size: $font-size-5;
                     font-weight: 200;
-                    position: relative;
                     margin-top: 40px;
                     margin-bottom: 40px;
                 }
-                p:after {
-                    transition: all ease-in 0.15s; 
-                    content: ' ';
-                    position: absolute;
-                    top: 287%;
-                    left: -500px;
-                    height: 1px;
-                    width: 3000px;
-                    background: $color-2;
-                }
+            }
+            .option:after {
+                transition: all ease-in 0.15s; 
+                content: ' ';
+                position: absolute;
+                top: 117%;
+                left: -500px;
+                height: 1px;
+                width: 3000px;
+                background: $color-2;
             }
         }
     }
 }
 
+
+.green-bc {
+    background: #7E9F77;
+    p, span {
+        color: white !important;
+    }
+}
 .center-text-block {
+    margin-top: 60px;
+    margin-bottom: 60px;
     width: 100%;
     h3 {
         font-size: $font-size-6;
@@ -203,6 +207,34 @@
         display: flex;
         justify-content: center;
         margin: 0 auto;
+    }
+}
+
+.left-text-block {
+    width: 100%;
+    h3 {
+        font-size: $font-size-6;
+        color: $color-2;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+    p, span {
+        color: $color-2;
+        font-size: $font-size-5;
+    }
+    p {
+        font-weight: 200;
+        line-height: 1.42;
+    }
+    span {
+        font-weight: 400;
+        font-style: italic;
+    }
+    .left-text {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
@@ -273,4 +305,164 @@
 
     }
 
+}
+
+
+//// FROM MARKETING STRATEGY PAGE
+
+.m-strat-container {
+    .heading {
+        h2 {
+            width: 50%;
+        }
+        p {
+            width: 40%;
+        }
+    }
+}
+
+.heading-brand {
+    h2, span {
+        font-size: $font-size-6;
+        color: $color-2;
+        font-weight: 400;
+        text-transform: none;
+    }
+    span {
+        position: absolute;
+    }
+    .right-side, .left-side { 
+        width: 43.3%;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        position: relative;
+        &.opacity {
+            opacity: 0.13;
+        }
+    }
+    .left-side {
+        span {
+            left: 62.2%;
+        }
+    }
+    .right-side {
+        span {
+            left: 65.4%;
+        }
+    }
+}
+
+.besides-block {
+    .left-side, .right-side {
+        width: 50%;
+        h2, p {
+            margin-top: 0;
+        }
+        h2 {
+            margin-bottom: 20px;
+            text-transform: none;
+        }
+    }
+    .left-side {
+        span {
+            font-size: $font-size-2;
+            opacity: 0.29
+        }
+    }
+    .right-side {
+        span {
+            font-weight: 400;
+            font-style: italic;
+        }
+    }
+    h2 {
+        color: $color-2;
+        font-size: $font-size-6;
+    }
+    p, span {
+        color: $color-2;
+        font-size: $font-size-5;
+    }
+    p {
+        font-weight: 200;
+        line-height: 1.42;
+    }
+
+}
+
+.arrow-scheme {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    .scheme-row {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+.researches {
+    h2, p {
+        color: $color-2;
+    }
+    .container {
+        .left-side, .right-side {
+            width: 50%;
+            h2 {
+                font-size: $font-size-6;
+                font-weight: 400;
+            }
+            p {
+                font-size: $font-size-5;
+                font-style: italic;
+                font-weight: 400;
+            }
+        }
+        .right-side {
+            h2 {
+                font-weight: 600;
+                margin-bottom: 15px;
+
+            }
+            p {
+                margin-top: 0;
+            }
+            .research-item {
+                margin-bottom: 0px;
+                // margin-top: 30px;
+            }
+        }
+    }
+}
+
+.desk-research {
+    p {
+        color: $color-2;
+    }
+    .container {
+        .heading-100 {
+            padding: 0 0;
+        }
+        .help-options {
+            width: 100%;
+            .help-option {
+                width: calc(20% - 30px);
+                position: relative;
+                p {
+                    line-height: 1.42;
+                }
+                .circle {
+                    width: 45px;
+                    height: 45px;
+                    position: absolute;
+                    border-radius: 1000px;
+                    left: -7%;
+                    top: 5px;
+                    z-index: -1;
+                }
+            }
+            .help-option:not(:last-child) {
+                margin-right: 30px;
+            }
+        }
+    }
 }

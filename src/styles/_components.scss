@@ -394,3 +394,40 @@
     width: 3000px;
     background: $color-2;
 }
+
+
+
+.heading {
+    align-items: center;
+    h2, p {
+        color: $color-2;
+    }
+    span {
+        font-weight: 400;
+        font-style: italic;
+    }
+    p {
+        font-size: $font-size-4;
+        font-weight: 400;
+        width: 40%;
+    }
+    h2 {
+        width: 50%;
+        font-size: $font-size-6;
+        font-weight: 400;
+        text-transform: none;
+    }
+}
+
+.heading-100 {
+    align-items: center;
+    padding: 20px 75px;
+    h2 {
+        color: $color-2;
+        font-size: 3.5vw;
+        font-weight: 400;
+        width: 100%;
+    }
+
+
+}

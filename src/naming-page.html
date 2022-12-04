@@ -1,0 +1,54 @@
+@@include("./components/services-pages/service-page-template.html", {
+    "uniquepageclass" : "class='naming'",
+    "textcolor" : "style='color: white'",
+    "background" : "style='background-image: url(./images/pr-bc.jpg)'",
+    "service-type-svg" : "naming-page",
+    "bottom-right-text" : "название — ваш ключ к доле рынка<br>©Алекс Фрэнкель «Нейминг»"
+}) 
+@@include("./components/common-blocks/center-text-block.html", {
+    "text" : "<p>В России предприниматели редко придают особое значения названию своей компании или продукта. А зря. Ведь «как корабль назовешь…»<br><br> <span>Название играет важную роль в формировании имиджа</span> и дальнейшего <span class='text-color-6'>позиционирования Бренда.</span><br><br> Правильный <span>нейминг отражает философию и характер бизнеса</span>, запоминается и вызывает <span class='text-color-5'>приятные ассоциации.</span></p>"
+})  
+<section class="arrow-scheme">
+    <div class="flex-col">
+        @@include("./components/services-pages/scheme-row-item.html", {
+            "rowitem" : "scheme-row-1-nm" 
+        })  
+        @@include("./components/services-pages/scheme-row-item.html", {
+            "rowitem" : "scheme-row-2-nm" 
+        }) 
+        @@include("./components/services-pages/scheme-row-item.html", {
+            "rowitem" : "scheme-row-3-nm" 
+        })   
+    </div>
+</section>
+<section class="block-options">
+    <div class="container-100 flex-col">
+        @@include("./components/common-blocks/service-name-only-h.html", { 
+            "tasks" : "затем проверьте придуманные названия по этому чек-листу. Хороший нейминг:"
+        })
+        <div class="options flex-col">
+            @@include("./components/common-blocks/option-item.html", {
+                "background": "style='background: #6970B1'",
+                "option-text": "<p>01&nbsp;&nbsp;&nbsp;<span>легко воспринимается</span> на слух,</p>"
+            }) 
+            @@include("./components/common-blocks/option-item.html", {
+                "background": "style='background: #6970B1'",
+                "option-text": "<p>02&nbsp;&nbsp;&nbsp;<span>ритмично</span> звучит,</p>"
+            }) 
+            @@include("./components/common-blocks/option-item.html", {
+                "background": "style='background: #6970B1'",
+                "option-text": "<p>03&nbsp;&nbsp;&nbsp;хорошо <span>запоминается,</span></p>"
+            }) 
+            @@include("./components/common-blocks/option-item.html", {
+                "background": "style='background: #6970B1'",
+                "option-text": "<p class='special-after'>04&nbsp;&nbsp;&nbsp;<span>легко произносится</span></p>"
+            }) 
+        </div>
+    </div>
+</section>
+
+@@include("./components/services-pages/rounded-block.html", {}) 
+@@include("./components/common-blocks/form.html", {
+    "heading" : "поделитесь, где болит и "
+})  
+@@include("./components/common-blocks/footer.html", {}) 

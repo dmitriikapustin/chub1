@@ -235,10 +235,22 @@
             align-items: flex-start !important;
             .left-side, .right-side {
                 justify-content: flex-start !important;
-                // width: 50% !important;
+                // flex-direction: column !important;
+                width: 100% !important;
             }
+            .left-side a {
+                width: 48.5% !important;
+                max-width: 48.5% !important;
+            }
+
+            .left-side {
+                :nth-child(1) {
+                    margin-right: 0px !important;
+                }
+            }
+
             .right-side {
-                .social, .copyright-text, .left-side p {
+                .social, .copyright-text, .left-side a {
                     width: 48.5% !important;
                     max-width: 48.5% !important;
                 }
@@ -256,6 +268,7 @@
                 .copyright-text {
                     margin-left: 0 !important;
                 }  
+
             }
             .social, .left-side a, .copyright-text a {
                 margin-bottom: 15px !important;
@@ -266,7 +279,7 @@
     .form {
         height: auto !important;
         border-radius: 30px !important;
-        margin-top: 25% !important;
+        margin-top: 40px !important;
         .top-text {
             h3 {
                 max-width: 100% !important;
@@ -289,7 +302,7 @@
                         color: $color-2;
                         // width: 100% !important;
                         font-size: 3vw !important;
-                        max-width: 138px !important;
+                        max-width: 80% !important;
                         }
                     }
                     &:checked + label:before {
@@ -297,6 +310,8 @@
                       }
                     & + label:before {
                         margin-right: 10px !important;
+                        width: 20px !important;
+                        height: 20px !important;
                       }
                     // & + label:before {
                     //     content: '';
@@ -366,13 +381,27 @@
     ///////// SERVICES PAGE
 
     .services { 
+        margin-bottom: 15px !important;
+        &:hover {
+            .service-item-background {
+                opacity: 0 !important;
+            }
+        }
         .svg-item {
             width: fit-content !important;
             img {
                 height: 40px !important;
             }
         }
+        .top-content {
+            margin-left: 20px !important;
+        }
         .services-list {
+            .service-item {
+                & {
+                    padding: 10px 20px !important;
+                }
+            }
             .right-side {
                 width: 100% !important;
                 p {

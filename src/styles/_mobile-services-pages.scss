@@ -3,18 +3,26 @@
         width: calc(100vw - 40px) !important;
     }
 
-    .header-b {
+    .header-b, .header-w {
         height: fit-content !important;
     }
+
+    .heading, .heading-100 {
+        padding: 10px 20px !important;
+        h2, p { 
+            width: 100% !important;
+        }
+    }
+
     .service-page { 
         .bottom-right-text {
             height: auto !important;
             p {
                 font-size: $font-size-4-mob !important;
-                width: 60% !important;
+                width: 100% !important;
             }
             .pr {
-                width: 50% !important;
+                width: 100% !important;
             }
         }
         .center-content {
@@ -27,7 +35,8 @@
             }
         }
     }
-    .block-options { 
+    .block-options {
+        margin-top: 0 !important; 
         h2 {
             font-size: $font-size-6-mob;
         }
@@ -54,6 +63,9 @@
                 .special-after:after {
                     top: 190% !important;
                 }
+            }
+            .option:after {
+                top: 108.5% !important;
             }
         }
     }
@@ -83,6 +95,17 @@
             .rounded-content {
                 p, a {
                     font-size: $font-size-4-mob !important;
+                }
+                p {
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                }
+                .arrow-right-bottom {
+                    margin-top: 5px;
+                    margin-bottom: 0px;
+                }
+                a {
+                    padding: 3.5px 15px;
                 }
             }
         }
