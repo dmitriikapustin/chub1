@@ -8,7 +8,15 @@
     }
 
     .heading, .heading-100 {
-        padding: 10px 20px !important;
+        padding: 10px 0px !important;
+
+        h2 {
+            margin-top: 0 !important;
+            font-size: $font-size-6-mob !important;
+        }
+        p {
+            font-size: $font-size-4-mob !important;
+        }
         h2, p { 
             width: 100% !important;
         }
@@ -17,6 +25,8 @@
     .service-page { 
         .bottom-right-text {
             height: auto !important;
+            margin-bottom: 60px;
+            margin-top: 0 !important;
             p {
                 font-size: $font-size-4-mob !important;
                 width: 100% !important;
@@ -34,20 +44,25 @@
                 width: 90% !important; 
             }
         }
+
     }
     .block-options {
         margin-top: 0 !important; 
         h2 {
             font-size: $font-size-6-mob;
         }
-        .option-item, .heading {
+        .container-100 {
             padding: 10px 20px !important;
+        }
+        .option-item, .heading {
+            padding: 10px 0 !important;
         }
         .heading {
             flex-direction: column !important;
             align-items: flex-start !important;
             p {
                 font-size: $font-size-4-mob;
+                margin-bottom: 0 !important;
             }
         }
         &:hover {
@@ -70,11 +85,18 @@
         }
     }
 
+    .arrow-scheme {
+        margin-top: 50px !important;
+        margin-bottom: 50px !important;
+    }
+
+
 
     .center-text-block { 
-        margin-top: 30px;
+        // margin-top: 30px;
         h3 {
             font-size: $font-size-6-mob;
+            margin-top: 0 !important;
         }
 
         p, span {
@@ -83,7 +105,66 @@
         }
     }
 
+    .left-text-block {
+        p, span {
+            font-size: $font-size-4-mob !important;
+        }
+    }
+
+    .heading-brand { 
+        .container {
+            padding-bottom: 15px !important;
+            padding-top: 15px !important;
+        }
+        h2, span {
+            font-size: 6.2vw !important;
+        }
+        .left-side, .right-side {
+            width: calc(50% - 5px) !important;
+            margin-right: 5px !important;
+        }
+        .left-side {
+            span {
+                left: 83% !important;
+            }
+        }
+        .right-side {
+            span {
+                left: 87.2% !important;
+            }
+        }
+    }
+
+
+    .besides-block { 
+        .container {
+            flex-direction: column !important;
+        }
+        .left-side, .right-side {
+            width: 100% !important;
+            h2 {
+                font-size: $font-size-6-mob;
+            }
+            p, span {
+                font-size: $font-size-4-mob;
+            }
+            h2, p {
+                margin-top: 0;
+
+            }
+            h2 {
+                margin-bottom: 5px !important;
+                text-transform: none;
+            }
+            p {
+                margin-top: 20px !important;
+            }
+        }
+    }
+
     .rounded-block { 
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
         .container {
             flex-direction: column !important;
         }
@@ -106,6 +187,47 @@
                 }
                 a {
                     padding: 3.5px 15px;
+                }
+            }
+        }
+    }
+    
+    .researches {
+        .container {
+            flex-direction: column !important;
+        }
+        .left-side, .right-side {
+            h2 {
+                font-size: $font-size-6-mob !important;
+            }
+            p {
+                font-size: $font-size-4-mob !important;
+
+            }
+        }
+        .right-side {
+            width: 100% !important;
+        }
+    }
+
+    .desk-research {
+        .container {
+            .help-options {
+                flex-direction: column !important;
+                .help-option {
+                    margin-bottom: 0px !important;
+                    width: 100% !important;
+                    p {
+                        font-size: $font-size-4-mob !important;
+                    }
+                    .circle {
+                        width: 30px;
+                        height: 30px;
+                        position: absolute;
+                        border-radius: 1000px;
+                        left: -10px;
+                        top: 12.5px;
+                    }
                 }
             }
         }

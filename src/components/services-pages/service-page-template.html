@@ -5,13 +5,13 @@
 })
 <section class="service-page">
     <div @@background class="service-page-background"></div>
-    <div class="container">
-        @@if (textcolor === "style='color: black'") {
-            @@include("../common-blocks/header-b.html", {}) 
-        }
-        @@if (textcolor === "style='color: white'") {
-            @@include("../common-blocks/header-w.html", {}) 
-        }
+    @@if (textcolor === "style='color: black'") {
+        @@include("../common-blocks/header-b.html", {}) 
+    }
+    @@if (textcolor === "style='color: white'") {
+        @@include("../common-blocks/header-w.html", {}) 
+    }
+    <div class="container container-cont">
         <div class="center-content flex-col">
             <p @@textcolor>услуги</p>
             <div class="service-type-svg">

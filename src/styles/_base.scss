@@ -464,9 +464,12 @@
 }
 
 .header, .header-b, .header-w {
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
+
+    .container {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
     .nav-options {
         a {
             margin-right: 70px;
@@ -474,6 +477,10 @@
 
         }
     }
+    .burger-content-center, .burger-content-bottom { 
+        display: none;
+    }
+
     .change-language {
         a {
             font-size: $font-size-2;

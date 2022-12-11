@@ -1,12 +1,19 @@
 .service-page {
+    display: flex;
+    flex-direction: column !important;
     p, h3, h2 {
         font-weight: 400;
     }
 
     width: 100%;
     height: 100vh !important;
-    .container {
-        height: 100%;
+    // .container {
+    //     height: 100%;
+    // }
+    .container-cont {
+        height: fill !important;
+        display: flex !important;
+        justify-content: space-between !important;
     }
     .service-page-background {
         height: 100vh;
@@ -248,8 +255,12 @@
 
     .scheme {
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         width: 100%;
+        // grid-template-columns: repeat(6, auto);
+        // grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        // grid-auto-rows: 1fr;
+        // grid-row: 1 / 3 ;
         .first-level, .second-level, .third-level {
             width: 100%;
         }
@@ -282,8 +293,8 @@
             border-radius: 1000px;
             border: 1px solid black;
             height: auto;
-            // justify-content: center;
-            // align-items: center;
+            justify-content: center;
+            align-items: center;
         }
         .number-container {
             width: calc(15% - 5px);
@@ -454,6 +465,7 @@
                 position: relative;
                 p {
                     line-height: 1.42;
+                    font-size: $font-size-4;
                 }
                 .circle {
                     width: 45px;
@@ -461,7 +473,7 @@
                     position: absolute;
                     border-radius: 1000px;
                     left: -7%;
-                    top: 5px;
+                    top: 12.5px;
                     z-index: -1;
                 }
             }
