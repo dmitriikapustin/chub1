@@ -13,6 +13,7 @@
     .container-cont {
         height: fill !important;
         display: flex !important;
+        // flex-direction: column;
         justify-content: space-between !important;
     }
     .service-page-background {
@@ -35,17 +36,22 @@
             width: 75%;
         }
     }
+    .bottom-right-text-mark-strat {
+        margin-top: 5% !important;
+    }
     .bottom-right-text {
         width: 100%;
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
-        margin-top: 7%;
+        margin-top: 3%;
         p {
-            width: 36%;
+            max-width: 36%;
+            min-width: 25%;
             line-height: 1.28;
             font-size: $font-size-4;
             font-weight: 200 !important;
+            margin-bottom: 0;
         }
         .span-strategy {
             font-weight: 600 !important;
@@ -252,61 +258,117 @@
     h2 {
         font-size: $font-size-6;
     }
-
     .scheme {
         display: flex;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
         width: 100%;
+        // height: auto;
         // grid-template-columns: repeat(6, auto);
         // grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
         // grid-auto-rows: 1fr;
         // grid-row: 1 / 3 ;
-        .first-level, .second-level, .third-level {
+        .first-level, .second-level, .third-level, .fourth-level {
             width: 100%;
+            // height: auto !important;
         }
         .second-level {
             justify-content: center;
         }
         .number {
             font-size: $font-size-2;
-        }
-        .number {
-            // width: 10%;
+            margin-top: 0 !important;
             font-weight: 600;
-            // margin-right: 5px;
+        }
+        .task, .only-task {
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+        }
+        .number-and-task-container-2 {
+            width: 100%;
+            justify-content: center;
+            margin: 0 auto;
+            .number {
+                margin-top: 9.5px !important;
+                margin-right: 10.5px;
+            } 
+        }
+        .number-and-task-container {
+            width: 100%;
+            justify-content: center;
+            margin: 0 auto;
+            .number {
+                margin-top: 5px !important;
+                margin-right: 5px;
+            } 
+        }
+        /// TYPES OF TASK'S WIDTH IN SCHEME ITEM WITHOUT DESCRIPTION (THIS IS COMPONENT)
+        .scheme-width-50 {
+            width: 50%;
+        }
+
+        .scheme-width-90 {
+            width: 90%;
+        }
+
+        .scheme-width-70 {
+            width: 70%;
+        }
+
+        // .scheme-width-fit-content {
+        //     width: 90%;
+        // }
+
+        .only-task {
+            font-size: 1.771vw;
+            font-weight: 500;
         }
         .task {
             font-size: 1.771vw;
-            width: 55%;
             font-weight: 500;
+            width: calc(52.5% - 5px);
+            margin-right: 5px;
         }
         .description {
-            width: 40%;
+            width: calc(42.5% - 5px);
+            margin-left: 5px;
             font-weight: 200;
             font-size: 0.938vw;
+            margin-top: 2.5px;
+            margin-bottom: 0;
         }
         .scheme-item {
             min-width: 15%;
             max-width: 33.33%;
             width: fit-content;
-            padding: 0 30px;
+            padding: 30px 15px;
             border-radius: 1000px;
             border: 1px solid black;
             height: auto;
             justify-content: center;
             align-items: center;
         }
+        .scheme-item-container {
+            display: flex;
+            justify-content: center;
+        }
+        .scheme-item-container-2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         .number-container {
-            width: calc(15% - 5px);
+            // width: calc(15% - 5px);
+            margin-top: 5px;
             margin-right: 5px;
-            margin-top: 30px;
-            justify-content: flex-end;
+            // margin-bottom: 5%;
+            // margin-top: 30px;
+            // justify-content: flex-end;
         }
         .texts-container {
             display: flex;
             height: auto;
-            align-items: center;
-            width: 85%;
+            // align-items: center;
+            width: 90%;
         }
         .si-7 {
             .task {
@@ -318,7 +380,9 @@
 
             }
         }
-
+        // .si-2 {
+        //     justify-content: space-between !important;
+        // }
     }
 
 }
@@ -348,7 +412,7 @@
         position: absolute;
     }
     .right-side, .left-side { 
-        width: 43.3%;
+        width: fit-content;
         padding-left: 0 !important;
         padding-right: 0 !important;
         position: relative;
@@ -358,12 +422,14 @@
     }
     .left-side {
         span {
-            left: 62.2%;
+            left: 84.8%;
         }
     }
     .right-side {
+        display: flex;
+        justify-content: flex-end;
         span {
-            left: 65.4%;
+            left: 83.4%;
         }
     }
 }

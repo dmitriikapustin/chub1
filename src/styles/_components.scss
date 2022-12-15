@@ -409,7 +409,8 @@
     p {
         font-size: $font-size-4;
         font-weight: 400;
-        width: 40%;
+        max-width: 40%;
+        min-width: 15%;
     }
     h2 {
         width: 50%;
