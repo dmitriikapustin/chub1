@@ -16,6 +16,7 @@
         }
         p {
             font-size: $font-size-4-mob !important;
+            max-width: 100% !important;
         }
         h2, p { 
             width: 100% !important;
@@ -30,9 +31,11 @@
             p {
                 font-size: $font-size-4-mob !important;
                 width: 100% !important;
+                max-width: 100% !important;
             }
             .pr {
                 width: 100% !important;
+                max-width: 100% !important;
             }
         }
         .center-content {
@@ -63,6 +66,7 @@
             p {
                 font-size: $font-size-4-mob;
                 margin-bottom: 0 !important;
+                width: 100% !important;
             }
         }
         &:hover {
@@ -88,6 +92,20 @@
     .arrow-scheme {
         margin-top: 50px !important;
         margin-bottom: 50px !important;
+        .arrow-scheme-container {
+            flex-direction: row !important;
+            flex-wrap: nowrap !important;
+            overflow: hidden !important;
+            white-space: normal !important; 
+            width: 500%;
+            height: 80px !important;
+            .scheme-row {
+                width: fit-content !important;
+            }
+        }
+        .arrow-scheme-container > .scheme-row {
+            overflow-x: scroll !important;
+        }
     }
 
 

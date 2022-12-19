@@ -1,9 +1,9 @@
 @@include("./components/services-pages/service-page-template.html", {
     "uniquepageclass" : "class='branding'",
     "textcolor" : "style='color: black'",
-    "background" : "style='background-image: url(./images/pr-bc.jpg)'",
+    "background" : "style='background-image: url(./images/branding-bc.jpg)'",
     "service-type-svg" : "branding-page",
-    "bottom-right-text" : "ваш бренд — это не просто красивая картинка, это инструмент для достижения целей бизнеса © CHub-1"
+    "bottom-right-text" : "<span class='span-bold'>ваш бренд — это не просто красивая картинка, это инструмент для достижения целей бизнеса</span> © CHub-1"
 }) 
 <section class="heading-brand">
     <div class="container flex-row space-between">
@@ -12,7 +12,7 @@
     </div>
 </section>
 <section class="arrow-scheme">
-    <div class="flex-col">
+    <div class="flex-col arrow-scheme-container">
         @@include("./components/services-pages/scheme-row-item.html", {
             "rowitem" : "scheme-row-1-br" 
         })  
@@ -86,7 +86,7 @@
 </section>
 
 <section class="arrow-scheme">
-    <div class="flex-col">
+    <div class="flex-col arrow-scheme-container">
         @@include("./components/services-pages/scheme-row-item.html", {
             "rowitem" : "scheme-row-1-br-bottom" 
         })  

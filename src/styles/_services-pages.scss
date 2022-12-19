@@ -53,7 +53,7 @@
             font-weight: 200 !important;
             margin-bottom: 0;
         }
-        .span-strategy {
+        .span-bold {
             font-weight: 600 !important;
         }
         .pr {
@@ -126,6 +126,16 @@
     }
 }
 
+/// FOR SMM-PAGE BLOCK-OPTIONS
+
+.smm-options {
+    .heading {
+        p {
+            max-width: 34%;
+        }
+    }
+}
+
 .block-options {
     margin-top: 60px;
     margin-bottom: 100px;
@@ -194,6 +204,32 @@
         color: white !important;
     }
 }
+
+.center-text-block-large {
+    margin-top: 80px;
+    margin-bottom: 60px;
+    width: 100%;
+    h3 {
+        font-size: $font-size-6;
+        color: $color-2;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+    span {
+        color: $color-6;
+        font-size: $font-size-6;
+    }
+    span {
+        font-weight: 400;
+        font-style: italic;
+    }
+    .center-text {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+}
+
 .center-text-block {
     margin-top: 60px;
     margin-bottom: 60px;
@@ -257,6 +293,64 @@
     }
     h2 {
         font-size: $font-size-6;
+        font-weight: 400;
+    }
+    .top-text-cont {
+        p {
+            font-size: 2.8vw;
+        }
+    }
+    .scheme-for-naming {
+        .second-level {
+            justify-content: flex-start !important;
+        }
+        .third-level {
+            justify-content: flex-end !important;
+        }
+        .si-4-2 {
+            .texts-container{
+                width: 80% !important;
+            }
+            .number-container {
+                margin-top: 11.5px !important;
+                margin-right: 15px !important;
+            }
+        }
+        .si-7-2 {
+            .texts-container{
+                width: 80% !important;
+            }
+            .number-container {
+                margin-top: -15px !important;
+                margin-right: 15px !important;
+            }
+        }
+    }
+
+    .scheme-for-research {
+        .scheme-item {
+            max-width: 50% !important;
+        }
+        .second-level {
+            justify-content: flex-end !important;
+        }
+        .scheme-item-container-2 {
+            width: 90% !important;
+        }
+        .number {
+            margin-right: 16px !important;
+        }
+        .number-research {
+            margin-right: 11px !important;
+        }
+    }
+    .scheme-for-smm {
+        .first-level, .second-level, .third-level {
+            justify-content: flex-start !important;
+        }
+        .scheme-item {
+            max-width: 40% !important;
+        }
     }
     .scheme {
         display: flex;
@@ -292,6 +386,15 @@
                 margin-right: 10.5px;
             } 
         }
+        .number-and-task-container-3 {
+            width: 100%;
+            justify-content: center;
+            margin: 0 auto;
+            .number {
+                margin-top: 7.5px !important;
+                margin-right: 10.5px;
+            } 
+        }
         .number-and-task-container {
             width: 100%;
             justify-content: center;
@@ -314,9 +417,9 @@
             width: 70%;
         }
 
-        // .scheme-width-fit-content {
-        //     width: 90%;
-        // }
+        .scheme-width-fit-content {
+            width: fit-content;
+        }
 
         .only-task {
             font-size: 1.771vw;
@@ -383,6 +486,26 @@
         // .si-2 {
         //     justify-content: space-between !important;
         // }
+    }
+    .scheme-for-business {
+        .first-level {
+            justify-content: flex-start !important;
+        }
+        .second-level {
+            justify-content: center !important;
+        }
+        .third-level {
+            justify-content: flex-start !important;
+        }
+        .number {
+            margin-top: -10px !important;
+        }
+        .number-business {
+            margin-right: 16px !important;
+        }
+        .number-business-2 {
+            margin-right: 22px !important;
+        }
     }
 
 }

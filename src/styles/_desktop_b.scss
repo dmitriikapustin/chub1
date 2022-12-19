@@ -4,23 +4,81 @@
             top: 84.5% !important;
         } 
     }
-
+    .desk-research { 
+        .help-options {
+            .help-option {
+                .circle {
+                    top: 15px !important;
+                    width: 55px !important;
+                    height: 55px !important;
+                }
+            }
+        }
+    }
 }
 
 
 @media screen and (min-width: 1800px) {
+    .desk-research { 
+        .help-options {
+            .help-option {
+                .circle {
+                    top: 19px !important;
+                    width: 65px !important;
+                    height: 65px !important;
+                }
+            }
+        }
+    }
+    .block-options {
+        .options {
+            .option:after {
+                top: 115.5% !important;
+            }
+        }
+    }
     .projects { 
+        .top-content {
+            .name {
+                h3 {
+                    top: 2px !important;
+                }
+            }
+        }
         .top-content::after {
-            top: 83.5% !important;
+            top: 82% !important;
+        } 
+    }
+
+    .services, .projects-page { 
+        .top-content::after {
+            top: 84.2% !important;
         } 
     }
 
 }
 
+
 @media screen and (min-width: 2000px) {
+    .desk-research { 
+        .help-options {
+            .help-option {
+                .circle {
+                    top: 26px !important;
+                }
+            }
+        }
+    }
     .projects { 
+        .top-content {
+            .name {
+                h3 {
+                    top: 0px !important;
+                }
+            }
+        }
         .top-content::after {
-            top: 82.5% !important;
+            top: 80% !important;
         } 
     }
 

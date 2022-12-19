@@ -1,15 +1,15 @@
 @@include("./components/services-pages/service-page-template.html", {
     "uniquepageclass" : "class='naming'",
     "textcolor" : "style='color: white'",
-    "background" : "style='background-image: url(./images/pr-bc.jpg)'",
+    "background" : "style='background-image: url(./images/naming-bc.jpg)'",
     "service-type-svg" : "naming-page",
-    "bottom-right-text" : "название — ваш ключ к доле рынка<br>©Алекс Фрэнкель «Нейминг»"
+    "bottom-right-text" : "<span class='span-bold'>название — ваш ключ к доле рынка</span><br>©Алекс Фрэнкель «Нейминг»"
 }) 
 @@include("./components/common-blocks/center-text-block.html", {
     "text" : "<p>В России предприниматели редко придают особое значения названию своей компании или продукта. А зря. Ведь «как корабль назовешь…»<br><br> <span>Название играет важную роль в формировании имиджа</span> и дальнейшего <span class='text-color-6'>позиционирования Бренда.</span><br><br> Правильный <span>нейминг отражает философию и характер бизнеса</span>, запоминается и вызывает <span class='text-color-5'>приятные ассоциации.</span></p>"
 })  
 <section class="arrow-scheme">
-    <div class="flex-col">
+    <div class="flex-col arrow-scheme-container">
         @@include("./components/services-pages/scheme-row-item.html", {
             "rowitem" : "scheme-row-1-nm" 
         })  
@@ -20,6 +20,90 @@
             "rowitem" : "scheme-row-3-nm" 
         })   
     </div>
+</section>
+<section class="scheme-block flex-col">
+    <div class="container flex-col top-text-cont">
+        <h2>схема для самостоятельной разработки PR-стратегии:</h2>
+        <p>если во время брейншторминга вы зашли в тупик,
+            то попробуйте придумать название с помощью:</p>
+    </div>
+    <div class="scheme scheme-for-naming">
+        <div class="first-level flex-row">
+            <div class="scheme-item flex-row" style="width: 20% !important">
+                <div class="scheme-item-container-2 scheme-item-to-resize">
+                    <div class="number-and-task-container-3 flex-row">
+                        <p class="number">01</p>
+                        <p class="only-task scheme-width-fit-content">Ассоциаций</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scheme-item flex-row" style="width: 20% !important">
+                <div class="scheme-item-container-2 scheme-item-to-resize">
+                    <div class="number-and-task-container-3 flex-row">
+                        <p class="number">02</p>
+                        <p class="only-task scheme-width-fit-content">Аббревиатур</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="second-level flex-row">
+
+            <div class="scheme-item flex-row" style="width: 22.5% !important">
+                <div class="scheme-item-container-2 scheme-item-to-resize">
+                    <div class="number-and-task-container-3 flex-row">
+                        <p class="number">03</p>
+                        <p class="only-task scheme-width-fit-content">Неологизмов</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scheme-item si-4-2 flex-row">
+                <div class="scheme-item-container-2 scheme-item-to-resize">
+                    <div class="number-container">
+                        <p class="number">04</p>
+                    </div>
+                    <div class="texts-container flex-row">
+                        <p class="task">Усечений</p>
+                        <p class="description">сокращайте, режьте и склеивайте слова</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scheme-item flex-row" style="width: 15% !important">
+                <div class="scheme-item-container-2 scheme-item-to-resize">
+                    <div class="number-and-task-container-3 flex-row">
+                        <p class="number">05</p>
+                        <p class="only-task scheme-width-fit-content">Имён</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scheme-item flex-row" style="width: 15% !important">
+                <div class="scheme-item-container-2 scheme-item-to-resize">
+                    <div class="number-and-task-container-3 flex-row">
+                        <p class="number">06</p>
+                        <p class="only-task scheme-width-fit-content">Рифм</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="third-level flex-row">
+            <div class="scheme-item si-7-2 flex-row">
+                <div class="scheme-item-container-2 main-scheme-item">
+                    <div class="number-container">
+                        <p class="number">07</p>
+                    </div>
+                    <div class="texts-container flex-row">
+                        <p class="task">Превосходных форм</p>
+                        <p class="description">супер- , гипер- , мега- и др. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>        
 </section>
 <section class="block-options">
     <div class="container-100 flex-col">

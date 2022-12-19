@@ -1,0 +1,63 @@
+@@include("./components/services-pages/service-page-template.html", {
+    "uniquepageclass" : "class='naming'",
+    "textcolor" : "style='color: white'",
+    "background" : "style='background-image: url(./images/advertising-bc.jpg)'",
+    "service-type-svg" : "advertising-page",
+    "bottom-right-text" : "<span class='span-bold'>поток клиентов не появляется из воздуха, его прирост зависит от ваших маркетинговых мускул</span> © C-Hub 1"
+}) 
+@@include("./components/common-blocks/center-text-block.html", {
+    "text" : "<p>Главная цель любой рекламы — <span class='text-color-8'>донести сообщение бренда</span> до потребителя и побудить его <span>к целевому действию.</span> <br><br> <span>Перед запуском</span> рекламных кампаний необходимо <span class='text-color-3'>разработать стратегию</span> продвижения и глубоко <span class='text-color-6'>проанализировать</span> целевую аудиторию. </p>"
+})  
+<section class="arrow-scheme">
+    <div class="flex-col arrow-scheme-container">
+        @@include("./components/services-pages/scheme-row-item.html", {
+            "rowitem" : "scheme-row-1-adv" 
+        })  
+        @@include("./components/services-pages/scheme-row-item.html", {
+            "rowitem" : "scheme-row-2-adv" 
+        }) 
+        @@include("./components/services-pages/scheme-row-item.html", {
+            "rowitem" : "scheme-row-3-adv" 
+        })   
+    </div>
+</section>
+<section class="block-options">
+    <div class="container-100 flex-col">
+        @@include("./components/common-blocks/service-name-only-h.html", { 
+            "tasks" : "детальное изучение ЦА позволяет:"
+        })
+        <div class="options flex-col">
+            @@include("./components/common-blocks/option-item.html", {
+                "background": "style='background: #F1C376'",
+                "option-text": "<p>01&nbsp;&nbsp;&nbsp;составить максимально подходящие ей <span>маркетинговые кампании</span> (рекламу, коммерческие предложения, контент и т.п.)</p>"
+            }) 
+            @@include("./components/common-blocks/option-item.html", {
+                "background": "style='background: #F1C376'",
+                "option-text": "<p>02&nbsp;&nbsp;&nbsp;сформировать <span>грамотный оффер:</span> узнать проблему клиентов и пообещать решить её</p>"
+            }) 
+            @@include("./components/common-blocks/option-item.html", {
+                "background": "style='background: #F1C376'",
+                "option-text": "<p>03&nbsp;&nbsp;&nbsp;проработать <span>УТП</span> для потребителя</p>"
+            }) 
+            @@include("./components/common-blocks/option-item.html", {
+                "background": "style='background: #F1C376'",
+                "option-text": "<p>04&nbsp;&nbsp;&nbsp;определить <span>триггеры</span> для <span>влияния и мотивации</span> клиента</p>"
+            }) 
+            @@include("./components/common-blocks/option-item.html", {
+                "background": "style='background: #F1C376'",
+                "option-text": "<p class='special-after'>05&nbsp;&nbsp;&nbsp;выявить основные<span> каналы продвижения.</span></p>"
+            }) 
+        </div>
+    </div>
+</section>
+
+@@include("./components/common-blocks/center-text-block.html", {
+    "text" : "<p>Чем лучше вы узнаете свою ЦА,<br>тем сильнее зацветёт ваш бизнес — <br><span class='text-color-5'>спрос рождает предложение.</span></p>"
+})  
+
+
+@@include("./components/services-pages/rounded-block.html", {}) 
+@@include("./components/common-blocks/form.html", {
+    "heading" : "поделитесь, где болит и "
+})  
+@@include("./components/common-blocks/footer.html", {}) 
