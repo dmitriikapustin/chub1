@@ -624,9 +624,11 @@
             }
             .img-hover {
                 transition: all 0.2s linear;
-                object-fit: cover;
-                width: 460px !important;
-                height: 423px !important;
+                transform: scale(1);
+                filter: none;
+                // object-fit: cover;
+                // width: 460px !important;
+                // height: 423px !important;
             }
 
             &:hover {

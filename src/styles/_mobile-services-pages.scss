@@ -50,14 +50,15 @@
 
     }
     .block-options {
-        margin-top: 0 !important; 
+        margin-top: 25px !important; 
         h2 {
             font-size: $font-size-6-mob;
+            margin-bottom: 10px !important;
         }
         .container-100 {
             padding: 10px 20px !important;
         }
-        .option-item, .heading {
+        .option-item, .heading, .option-item-adv{
             padding: 10px 0 !important;
         }
         .heading {
@@ -90,6 +91,17 @@
     }
     
     .scheme-block {
+        // overflow: hidden !important;
+        // .scheme {
+        //     overflow-x: scroll !important;
+        //     width: fit-content !important;
+        //     flex-direction: row !important;
+        //     flex-wrap: nowrap !important;
+        //     .scheme-item, .scheme-item-container {
+        //         height: 80px !important;
+        //         width: fit-content !important;
+        //     }
+        // }
         h2 {
             font-size:  $font-size-5-mob !important;
         }
@@ -129,7 +141,7 @@
 
 
     .center-text-block { 
-        // margin-top: 30px;
+        margin-top: 30px !important;
         h3 {
             font-size: $font-size-6-mob;
             margin-top: 0 !important;

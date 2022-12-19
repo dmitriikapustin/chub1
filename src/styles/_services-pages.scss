@@ -194,6 +194,49 @@
                 background: $color-2;
             }
         }
+        .option-item-adv {
+            & {
+                max-width: 100%;
+                position: relative;
+                padding: 20px 75px;
+            }
+            &-background {
+                height: 99.9%;
+                width: 100%;
+                display: block;
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                border-radius: 1000px;
+                opacity: 0;
+                transition: all 0.2s linear;
+            }
+            &:hover {
+                .option-item-background {
+                    opacity: 1;
+                }
+            }
+            .option {
+                position: relative;
+                p {
+                    font-size: $font-size-5;
+                    font-weight: 200;
+                    margin-top: 40px;
+                    margin-bottom: 40px;
+                }
+            }
+            .option:after {
+                transition: all ease-in 0.15s; 
+                content: ' ';
+                position: absolute;
+                top: 113%;
+                left: -500px;
+                height: 1px;
+                width: 3000px;
+                background: $color-2;
+            }
+        }
     }
 }
 

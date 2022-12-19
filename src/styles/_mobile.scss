@@ -1,5 +1,11 @@
 @media screen and (max-width: 800px) {
 
+    .services, .projects-page { 
+        .top-content::after {
+            top: 90% !important;
+        } 
+    }
+
     section {
         margin: 0 !important;
     }
@@ -561,10 +567,23 @@
 
         .projects-block {
             flex-direction: column !important;
+            &:hover {
+                transition: none !important;
+                .img-hover {
+                    transition: none !important;
+                    transform: scale(1) !important;
+                    filter: none !important;
+                }
+                .description {
+                    transition: none !important;
+                    opacity: 0 !important;
+                }
+            }
             .width-67 {
                 width: 100% !important;
                 .project-block {
-                    width: 100% !important;            }
+                    width: 100% !important;           
+                }
             }
             .heading {
                 // width: 100% !important;

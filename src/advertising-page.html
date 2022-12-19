@@ -27,10 +27,12 @@
             "tasks" : "детальное изучение ЦА позволяет:"
         })
         <div class="options flex-col">
-            @@include("./components/common-blocks/option-item.html", {
-                "background": "style='background: #F1C376'",
-                "option-text": "<p>01&nbsp;&nbsp;&nbsp;составить максимально подходящие ей <span>маркетинговые кампании</span> (рекламу, коммерческие предложения, контент и т.п.)</p>"
-            }) 
+            <div class="option-item-adv">
+                <div style='background: #F1C376' class="option-item-background"></div>
+                <div class="option">
+                    <p>01&nbsp;&nbsp;&nbsp;составить максимально подходящие ей <span>маркетинговые кампании</span> (рекламу, коммерческие предложения, контент и т.п.)</p>
+                </div>
+            </div>
             @@include("./components/common-blocks/option-item.html", {
                 "background": "style='background: #F1C376'",
                 "option-text": "<p>02&nbsp;&nbsp;&nbsp;сформировать <span>грамотный оффер:</span> узнать проблему клиентов и пообещать решить её</p>"
