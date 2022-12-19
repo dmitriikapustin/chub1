@@ -393,6 +393,7 @@
         height: auto !important;
         border-radius: 30px !important;
         margin-top: 40px !important;
+
         .top-text {
             h3 {
                 max-width: 100% !important;
@@ -402,6 +403,21 @@
         .bottom-text {
             .checkbox-item {
                 width: 50% !important;
+            }
+            .choose:hover {
+                .circle-arrow {
+                    transition: all .3s ease-out;
+                    opacity: 1;
+                }
+                .arrow-right {
+                    transition: all .3s ease-out;
+                    opacity: 0;
+                    // top: 14.8%;
+                }
+                a {
+                    background-color: transparent;
+                    transition: all .3s ease-out;
+                }
             }
             .unstyled {
 

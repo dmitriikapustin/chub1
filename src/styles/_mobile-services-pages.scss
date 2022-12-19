@@ -88,26 +88,44 @@
             }
         }
     }
-
-    .arrow-scheme {
-        margin-top: 50px !important;
-        margin-bottom: 50px !important;
-        .arrow-scheme-container {
-            flex-direction: row !important;
-            flex-wrap: nowrap !important;
-            overflow: hidden !important;
-            white-space: normal !important; 
-            width: 500%;
-            height: 80px !important;
-            .scheme-row {
-                width: fit-content !important;
-            }
+    
+    .scheme-block {
+        h2 {
+            font-size:  $font-size-5-mob !important;
         }
-        .arrow-scheme-container > .scheme-row {
-            overflow-x: scroll !important;
+        .number {
+            font-size: 3vw !important;
+        }
+        .task, .only-task {
+            font-size: 4.5vw !important;
+        }
+        .description {
+            font-size: 2.2vw !important;
+
         }
     }
 
+    .arrow-scheme {
+        overflow: hidden;
+        .arrow-scheme-container {
+            overflow-x: scroll;
+            width: fit-content;
+            flex-direction: row !important;
+            flex-wrap: nowrap;
+            margin: 50px 0;
+            .scheme-row {
+                height: fit-content;
+                width: fit-content;
+                img {
+                    height: 80px;
+                    width: auto !important;
+                    min-width: none !important;
+                    max-width: none !important;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
 
 
     .center-text-block { 

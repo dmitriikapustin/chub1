@@ -19,8 +19,38 @@
 
 
 @media screen and (min-width: 1800px) {
+    .rounded-block {
+        margin-top: 100px !important;
+    }    
     
+    .arrow-scheme {
+        margin-top: 150px !important;
+        margin-bottom: 150px !important;
+    }
+    .center-text-block {
+        margin-top: 100px !important;
+        margin-bottom: 100px !important;
+    }
+    .scheme-block {
+        .scheme-mark-strategy {
+            .number-and-task-container-2 {
+                .number {
+                    margin-top: 12.5px !important;
+                }
+            }
+        }
+        .scheme-for-smm {
+            .number-and-task-container-2 {
+                .number {
+                    margin-top: 10.5px !important;
+                    margin-right: 17px !important;
+                }
+            }
+        }
+    }
     .desk-research { 
+        margin-top: 120px !important;
+        margin-bottom: 120px !important;
         .help-options {
             .help-option {
                 .circle {

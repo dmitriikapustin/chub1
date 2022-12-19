@@ -1,10 +1,26 @@
-@@include("./components/services-pages/service-page-template.html", {
-    "uniquepageclass" : "class='business'",
-    "textcolor" : "style='color: white'",
-    "background" : "style='background-image: url(./images/advertising-bc.jpg)'",
-    "service-type-svg" : "business-page",
-    "bottom-right-text" : "<span class='span-bold'>поток клиентов не появляется из воздуха, его прирост зависит от ваших маркетинговых мускул</span> © C-Hub 1"
-}) 
+@@include("./components/common-blocks/header.html", {
+    "meta-title": "chub",
+    "meta-description": " ",
+    "meta-keywords": " "
+})
+<section class="service-page">
+    <div style='background-image: url(./images/advertising-bc.jpg)' class="service-page-background"></div>
+
+    @@include("./components/common-blocks/header-w.html", {}) 
+
+    <div class="container container-cont">
+        <div class="center-content flex-col">
+            <p style='color: white'>услуги</p>
+            <div class="service-type-svg" style="width: 115% !important">
+                <img src="./images/business-page.svg" alt="">
+            </div>
+        </div>
+        <div class="bottom-right-text">
+            <p style='color: white' class='business'><span class='span-bold'>поток клиентов не появляется из воздуха, его прирост зависит от ваших маркетинговых мускул</span> © C-Hub 1</p>
+        </div>
+    </div>
+</section>
+
 @@include("./components/common-blocks/center-text-block.html", {
     "text" : "<p>Развитие бизнеса и увеличения объема продаж (business development & sales = BD&S) — это комплексные, взаимосвязанные между собой действия, которые нацелены <span>на поиск возможностей</span> для <span class='text-color-3'></span> по трём направлениям: <span class='text-color-6'>клиенты, рынки, отношения</span></p>"
 }) 
@@ -19,7 +35,7 @@
                 <div class="scheme-item-container-2 scheme-item-to-resize">
                     <div class="number-and-task-container-2 flex-row">
                         <p style="width: calc(7% - 16px) !important" class="number">01</p>
-                        <p class="only-task scheme-width-90" style="width: 93% !important">Исследуйте отрасль и конкурентную ситуацию на рынке</p>
+                        <p class="only-task scheme-width-90" style="width: 80% !important">Исследуйте отрасль и конкурентную ситуацию на рынке</p>
                     </div>
                 </div>
             </div> 
@@ -28,7 +44,7 @@
                 <div class="scheme-item-container-2 scheme-item-to-resize">
                     <div class="number-and-task-container-2 flex-row">
                         <p style="width: calc(7% - 16px) !important" class="number">02</p>
-                        <p class="only-task scheme-width-90" style="width: 93% !important">Обозначьте потенциальные возможности роста и преимущества</p>
+                        <p class="only-task scheme-width-90" style="width: 80% !important">Обозначьте потенциальные возможности роста и преимущества</p>
                     </div>
                 </div>
             </div> 
@@ -39,7 +55,7 @@
                 <div class="scheme-item-container-2 main-scheme-item">
                     <div class="number-and-task-container-2 flex-row">
                         <p style="width: calc(7% - 16px) !important" class="number">03</p>
-                        <p class="only-task scheme-width-90" style="width: 93% !important">Сформулируйте продуктовую стратегию для вашего товара/услуги</p>
+                        <p class="only-task scheme-width-90" style="width: 80% !important">Сформулируйте продуктовую стратегию для вашего товара/услуги</p>
                     </div>
                 </div>
             </div> 
@@ -48,7 +64,7 @@
                 <div class="scheme-item-container-2 scheme-item-to-resize">
                     <div class="number-and-task-container-2 flex-row">
                         <p style="width: calc(7% - 16px) !important" class="number">04</p>
-                        <p class="only-task scheme-width-90" style="width: 93% !important">Создайте уникальное коммерческое предложение</p>
+                        <p class="only-task scheme-width-90" style="width: 80% !important">Создайте уникальное коммерческое предложение</p>
                     </div>
                 </div>
             </div> 
@@ -68,7 +84,7 @@
                 <div class="scheme-item-container-2 scheme-item-to-resize">
                     <div class="number-and-task-container-2 flex-row">
                         <p style="width: calc(7% - 16px) !important" class="number number-business-2">06</p>
-                        <p class="only-task scheme-width-90" style="width: calc(93% - 6px) !important">Выберите площадку для продвижения</p>
+                        <p class="only-task scheme-width-90" style="width: calc(80% - 6px) !important">Выберите площадку для продвижения</p>
                     </div>
                 </div>
             </div> 
@@ -76,7 +92,7 @@
                 <div class="scheme-item-container-2 scheme-item-to-resize">
                     <div class="number-and-task-container-2 flex-row">
                         <p style="width: calc(7% - 16px) !important" class="number number-business-2">07</p>
-                        <p class="only-task scheme-width-90" style="width: calc(93% - 6px) !important">Настройте воронку продаж</p>
+                        <p class="only-task scheme-width-90" style="width: calc(80% - 6px) !important">Настройте воронку продаж</p>
                     </div>
                 </div>
             </div> 
