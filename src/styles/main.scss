@@ -67,3 +67,23 @@
         }
     }
 }
+
+.scheme-block {
+    .scheme-wrapper {
+        overflow: hidden;
+        .scheme {
+            flex-direction: row;
+            flex-wrap: nowrap;
+            width: fit-content;
+            overflow-x: scroll;
+            .flex-row {
+                width: fit-content !important;
+                flex-wrap: nowrap;
+                .scheme-item {
+                    width: fit-content;
+                    min-width: 130px;
+                }
+            }
+        }
+    }
+}
