@@ -330,6 +330,8 @@
     }
 }
 
+
+
 .scheme-block {
     p, h2 {
         color: $color-2;
@@ -344,6 +346,15 @@
         }
     }
     .scheme-for-naming {
+        .si-1, .si-2 {
+            width: 20%;
+        }
+        .si-3 {
+            width: 22.5%;
+        }
+        .si-5, .si-6 {
+            width: 15%;
+        }
         .second-level {
             justify-content: flex-start !important;
         }
@@ -352,16 +363,16 @@
         }
         .si-4-2 {
             .texts-container{
-                width: 80% !important;
+                width: 80%;
             }
             .number-container {
-                margin-top: 11.5px !important;
-                margin-right: 15px !important;
+                margin-top: 11.5px;
+                margin-right: 15px;
             }
         }
         .si-7-2 {
             .texts-container{
-                width: 80% !important;
+                width: 80%;
             }
             .number-container {
                 margin-top: -15px !important;
@@ -371,6 +382,15 @@
     }
 
     .scheme-for-research {
+        .si-1, .si-2, .si-3, .si-4 {
+            width: 33.33%;
+        }
+        .si-5 {
+            width: 25%;
+        }
+        .si-6 {
+            width: 40%;
+        }
         .scheme-item {
             max-width: 50% !important;
         }
@@ -413,7 +433,7 @@
         }
         .number {
             font-size: $font-size-2;
-            margin-top: 0 !important;
+            margin-top: 0;
             font-weight: 600;
         }
         .task, .only-task {
@@ -425,7 +445,7 @@
             justify-content: center;
             margin: 0 auto;
             .number {
-                margin-top: 9.5px !important;
+                margin-top: 9.5px;
                 margin-right: 10.5px;
             } 
         }
@@ -434,7 +454,7 @@
             justify-content: center;
             margin: 0 auto;
             .number {
-                margin-top: 7.5px !important;
+                margin-top: 7.5px;
                 margin-right: 10.5px;
             } 
         }
@@ -530,7 +550,30 @@
         //     justify-content: space-between !important;
         // }
     }
+    .scheme-mark-strategy {
+        .si-6 {
+            width: 38%;
+            max-width: 38%;
+        }
+        .si-7 , .si-8 {
+            width: 31%;
+        }
+        .si-10 , .si-11 {
+            width: 33%;
+        }
+    }
     .scheme-for-business {
+        .si-1, .si-2, .si-3, .si-4, .si-5, .si-6, .si-7 { 
+            .number {
+                width: calc(7% - 16px);
+            }
+        }
+        .si-1, .si-2, .si-3, .si-4, .si-5 {
+            width: 33.33%;
+        }
+        .si-6, .si-7 {
+            width: 25%;
+        }
         .first-level {
             justify-content: flex-start !important;
         }
@@ -541,7 +584,7 @@
             justify-content: flex-start !important;
         }
         .number {
-            margin-top: -10px !important;
+            margin-top: 5px;
         }
         .number-business {
             margin-right: 16px !important;

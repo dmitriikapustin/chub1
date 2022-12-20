@@ -89,7 +89,99 @@
             }
         }
     }
-    
+
+    .scheme-for-naming {
+        .number {
+            margin-top: 5px !important;
+        }
+        .si-4-2 {
+            .number-container {
+                margin-top: -15px !important;
+                margin-right: 5px !important;
+            }
+        }
+    }
+
+    .scheme-block-for-pr {
+        .second-level {
+            width: fit-content !important;
+            .scheme-item {
+                width: 150% !important;
+                max-width: 100% !important;
+            }
+        }
+    }
+
+    .scheme-for-research {
+        .si-1, .si-2, .si-3 {
+            .number {
+                margin-right: 23px !important;
+            }
+        }
+        .scheme-item {
+            width: 360px !important;
+        }
+        .number {
+            margin-top: 6px !important;
+        }
+    }
+
+    .scheme-for-business {
+        .number-and-task-container-2 {
+            .number {
+                margin-top: 5px !important;
+                margin-right: 15px !important;
+            } 
+        }
+        .scheme-for-business {
+            .si-1, .si-2, .si-3, .si-4, .si-5 { 
+                .number {
+                    margin-right: 30px !important;
+                }
+            }
+        }    
+        .number {
+            margin-top: 6px !important;
+        }
+    }
+
+    .scheme-mark-strategy {
+        .scheme-item {
+            width: 360px !important;
+        }
+        .number {
+            margin-top: 6px !important;
+        }
+    }
+
+
+    .scheme-block {
+        .scheme-wrapper {
+            overflow: hidden;
+            .scheme {
+                flex-direction: row;
+                flex-wrap: nowrap;
+                width: fit-content;
+                overflow-x: scroll;
+                .flex-row {
+                    width: fit-content;
+                    flex-wrap: nowrap;
+                    .scheme-item {
+                        max-width: 100% !important;
+                        width: 360px !important;
+                        // .number-container { 
+                        //     width: calc(10% - 5px) !important;
+                        // }
+                        .texts-container {
+                            width: 90% !important;
+                        }
+                        // min-width: 130px !important;
+                    }
+                }
+            }
+        }
+    }
+
     .scheme-block {
         // overflow: hidden !important;
         // .scheme {
@@ -106,13 +198,13 @@
             font-size:  $font-size-5-mob !important;
         }
         .number {
-            font-size: 3vw !important;
+            font-size: 3.2vw !important;
         }
         .task, .only-task {
             font-size: 4.5vw !important;
         }
         .description {
-            font-size: 2.2vw !important;
+            font-size: 3.2vw !important;
 
         }
     }
