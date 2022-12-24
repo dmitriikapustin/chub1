@@ -19,6 +19,14 @@
 
 
 @media screen and (min-width: 1800px) {
+
+    .logo-and-cards {
+        .cards { 
+            .card-item {
+                height: 617px !important;
+            }
+        }
+    }
     .rounded-block {
         margin-top: 100px !important;
     }    

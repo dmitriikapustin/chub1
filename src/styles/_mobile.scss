@@ -600,4 +600,60 @@
             }
         }
     }
+
+    
+    ///////// TEAM PAGE
+
+
+    .team-cover {
+        .team-text {
+            h3 {
+                font-size: $font-size-6-mob !important;
+            }
+        }
+    }
+
+    .logo-and-cards {
+        .bottom-level {
+            width: 100% !important;
+        }
+        .cards {
+            p {
+                font-size: $font-size-4-mob !important;
+            }
+            .card-item, .ekaterina-m, .ilia {
+                border-radius: 20px !important;
+                width: 100% !important;
+                margin: 12px 0 !important
+            }
+        }
+    }
+
+    .team-cover-block {
+        margin-top: 40px !important;
+        .cover {
+            transform: scale(1.6) translate(-50px, 0) !important;
+        }
+        .name-and-role {
+            left: 240px !important;
+            top: -30px !important;
+            h2 {
+                font-size: 6.5vw !important;
+                margin-bottom: 5px !important;
+            }
+            p {
+                font-size: $font-size-3-mob !important;
+                margin-top: 0 !important;
+            }
+        }
+        .right-text {
+            width: 48% !important;
+            left: 200px !important;
+            top: 100px !important;
+            p {
+                font-size: $font-size-3-mob !important;
+                line-height: 1.2 !important;
+            }
+        }
+    }
 }

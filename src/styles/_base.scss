@@ -116,6 +116,10 @@
         .change-language {
             a {
                 font-size: $font-size-2;
+                &:hover {
+                    color: #F1C376;
+                    transition: all .3s ease-out; 
+                }
             }
         }
     }
@@ -154,7 +158,7 @@
             }
         }
         .main-button {
-
+            margin-top: 15px;
             a { 
                 // margin-top: 10px;
                 // padding: 3% 15%;
@@ -475,7 +479,24 @@
         a {
             margin-right: 70px;
             font-size: $font-size-2;
-
+            transition: all .3s ease-out; 
+        }
+        .services {
+            &:hover {
+                color: $color_5;
+                transition: all .3s ease-out; 
+            }
+        }
+        .team {
+            &:hover {
+                color: $color_3;
+                transition: all .3s ease-out; 
+            }        }
+        .projects {
+            &:hover {
+                color: $color_7;
+                transition: all .3s ease-out; 
+            }
         }
     }
     .burger-content-center, .burger-content-bottom { 
@@ -498,7 +519,7 @@
 }
 
 
-///////// SERVICES PAGE
+/////////////////// SERVICES PAGE
 
 .services {
     h3, p {
@@ -540,7 +561,7 @@
             }
             & {
                 border-radius: 1000px;
-                margin-top: 80px;
+                margin-top: 140px;
                 margin-bottom: 20px;
                 max-width: 100%;
                 width: 100vw;
@@ -574,7 +595,7 @@
     }
 }
 
-///////// PROJECT PAGE
+///////////////// PROJECT PAGE
 
 .projects-page {
     h3, p {
@@ -645,4 +666,223 @@
             }
         }
     }
+}
+
+
+////////////////////// TEAM PAGE
+
+.team-cover {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    background-image: url("../images/team.jpg");
+    background-size: cover;
+    background-position: center;
+    .container {
+        height: 100vh;
+        // justify-content: space-between;
+    }
+    .header {
+        width: 100%;
+        justify-content: space-between;
+        .nav-options {
+            a {
+                color: $color_2;
+                margin-right: 70px;
+                font-size: $font-size-2;
+
+            }
+        }
+        .change-language {
+            a {
+                color: $color_2;
+                font-size: $font-size-2;
+                &:hover {
+                    color: #F1C376;
+                    transition: all .3s ease-out; 
+                }
+            }
+        }
+    }
+    .team-text {
+        h3 {
+            margin-top: 0;
+            margin-bottom: 460px;
+            // margin-left: 10px;
+            color: $color_2;
+            font-size: $font-size-6;
+            font-weight: 400;
+        }
+    }
+}
+
+
+.logo-and-cards {
+    transition: all .6s ease-out;
+    background-color: $color_1;
+    .logo {
+        transition: all .6s ease-out;
+        width: 100%;
+        svg {
+            width: 100%;
+            height: 62vh;
+        }
+        svg path {
+            fill: black;
+        }
+    }
+    &.default-state {
+        background-color: $color_6;
+        transition: all .6s ease-out;
+        .logo {
+            transition: all .6s ease-out;
+            svg path {
+                fill: white;
+            }
+        }
+    }
+    .cards {
+        width: 100%;
+        &.to-appear {
+            .card-item {
+                opacity: 1;
+                transform: scale(1);
+                transition: all .6s ease-out;
+            }
+        }
+        .top-level, .bottom-level {
+            width: 100%;
+            justify-content: space-between;
+        }
+        .bottom-level {
+            width: 50%;
+        }
+        .top-level {
+            justify-content: space-between;
+        }
+        p {
+            font-size: $font-size-2;
+            color: $color_2;
+        }
+        .card-item {
+            // padding-left: 0;
+            // padding-right: 0;
+            // opacity: 0;
+            // transform: scale(0.6);
+            transition: all .6s ease-out;
+            background-size: cover;
+            background-position: center;
+            border-radius: 39px;
+            height: 500px;
+            width: calc(25% - 40px);
+        }
+        .card-item-text {
+            width: 100%;
+            margin: 10px 20px;
+        }
+        .inna {
+            background-image: url("./images/inna.jpg");
+            margin: 25px 25px 25px 0;
+        }
+        .ekaterina {
+            background-image: url("./images/ekaterina.jpg");
+            margin: 25px;
+        }
+        .victoria {
+            background-image: url("./images/victoria.jpg");
+            margin: 25px;
+        }
+        .ksenia {
+            background-image: url("./images/ksenia.jpg");
+            margin: 25px 0 25px 25px;
+        }
+        .ekaterina-m {
+            background-image: url("./images/empty-card.jpg");
+            margin: 25px 25px 25px 0;
+            width: calc(50% - 40px);
+        }
+        .ilia {
+            background-image: url("./images/empty-card.jpg");
+            margin: 25px;
+            width: calc(50% - 40px);
+        }
+
+        .card-item {
+
+        }
+    }
+}
+
+
+.team-cover-block {
+    position: relative;
+    margin-top: 7.2%;
+    .container {
+        max-width: 2500px !important;
+        border-radius: 39px !important;
+        width: 100%;
+        .packshot {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: $color_7;
+            transform: scale(1.2);
+            z-index: 1000;
+            width: 100%;
+            transition: all .3s ease-out; 
+            &.away {
+                z-index: -10;
+                opacity: 0;
+                transition: all .3s ease-out; 
+                pointer-events: none;
+            } 
+        }
+        .cover {
+            height: fit-content;
+            transform: scale(1.2);
+            width: 100%;
+            max-width: 100%;
+            z-index: -1;
+            img {
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+
+    h2, p {
+        color: $color_2;
+        line-height: 1;
+    }
+    h2 {
+        font-size: 5vw;
+        margin-bottom: 20px;
+        font-weight: 400;
+    }
+    .name-and-role {
+        position: absolute;
+        left: 50px;
+        top: 180px;
+        p {
+            font-size: $font-size-4;
+            font-weight: 200;
+        }
+    }
+    .right-text {
+        position: absolute;
+        left: 67.5%;
+        top: 55%;
+        width: 30%;
+        p {
+            font-size: $font-size-3;
+            font-weight: 200;
+            line-height: 1.62;
+        }
+    }
+    // height: 100vh;
+    // background-image: url("../images/olga-s-va.jpg");
+    // background-size: cover;
+    // background-position: center;
+    // background-origin: 0 0 ;
 }

@@ -118,8 +118,40 @@
                 border: 1px solid black;
                 border-radius: 1000px;
                 transition: all .3s ease-out;
+            }
+            .pink {
+                transition: all .3s ease-out;
                 &:hover {
-                    background-color: $color-8;
+                    transition: all .3s ease-out;
+                    background-color: $color_5;
+                }
+            }
+            .green {
+                transition: all .3s ease-out;
+                &:hover {
+                    transition: all .3s ease-out;
+                    background-color: $color_8;
+                }
+            }
+            .blue {
+                transition: all .3s ease-out;
+                &:hover {
+                    transition: all .3s ease-out;
+                    background-color: $color_7;
+                }
+            }
+            .darkblue {
+                transition: all .3s ease-out;
+                &:hover {
+                    transition: all .3s ease-out;
+                    background-color: $color_6;
+                }
+            }
+            .yellow {
+                transition: all .3s ease-out;
+                &:hover {
+                    transition: all .3s ease-out;
+                    background-color: $color_4;
                 }
             }
         }
@@ -137,7 +169,7 @@
 }
 
 .block-options {
-    margin-top: 60px;
+    margin-top: 20px;
     margin-bottom: 100px;
     h2, p, span {
         color: $color-2;
@@ -330,7 +362,15 @@
     }
 }
 
-
+@media screen and (min-width: 801px) { 
+    .scheme-item {
+        transition: all .3s ease-out;
+        &:hover {
+            transition: all .3s ease-out;
+            background-color: #F1C376;
+        }
+    }
+}
 
 .scheme-block {
     p, h2 {
@@ -381,40 +421,6 @@
         }
     }
 
-    .scheme-for-research {
-        .si-1, .si-2, .si-3, .si-4 {
-            width: 33.33%;
-        }
-        .si-5 {
-            width: 25%;
-        }
-        .si-6 {
-            width: 40%;
-        }
-        .scheme-item {
-            max-width: 50% !important;
-        }
-        .second-level {
-            justify-content: flex-end !important;
-        }
-        .scheme-item-container-2 {
-            width: 90% !important;
-        }
-        .number {
-            margin-right: 16px !important;
-        }
-        .number-research {
-            margin-right: 11px !important;
-        }
-    }
-    .scheme-for-smm {
-        .first-level, .second-level, .third-level {
-            justify-content: flex-start !important;
-        }
-        .scheme-item {
-            max-width: 40% !important;
-        }
-    }
     .scheme {
         display: flex;
         // flex-wrap: wrap;
@@ -550,6 +556,43 @@
         //     justify-content: space-between !important;
         // }
     }
+    .scheme-for-smm {
+        .first-level {
+            align-items: flex-start !important;
+        }
+        .first-level, .second-level, .third-level {
+            justify-content: flex-start !important;
+        }
+        .scheme-item {
+            max-width: 40% !important;
+        }
+    }
+    .scheme-for-research {
+        .si-1, .si-2, .si-3, .si-4 {
+            width: 33.33%;
+        }
+        .si-5 {
+            width: 25%;
+        }
+        .si-6 {
+            width: 40%;
+        }
+        .scheme-item {
+            max-width: 50% !important;
+        }
+        .second-level {
+            justify-content: flex-end !important;
+        }
+        .scheme-item-container-2 {
+            width: 90% !important;
+        }
+        .number {
+            margin-right: 16px !important;
+        }
+        .number-research {
+            margin-right: 11px !important;
+        }
+    }
     .scheme-mark-strategy {
         .si-6 {
             width: 38%;
@@ -590,7 +633,7 @@
             margin-right: 16px !important;
         }
         .number-business-2 {
-            margin-right: 22px !important;
+            margin-right: 20px !important;
         }
     }
 

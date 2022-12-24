@@ -5,6 +5,14 @@
     "service-type-svg" : "naming-page",
     "bottom-right-text" : "<span class='span-bold'>название — ваш ключ к доле рынка</span><br>©Алекс Фрэнкель «Нейминг»"
 }) 
+<style>
+    .option-item-background, .hover-color:hover {
+        background-color: #6970B1;
+    }
+    .number {
+        color: #6970B1 !important;
+    }
+</style>
 @@include("./components/common-blocks/center-text-block.html", {
     "text" : "<p>В России предприниматели редко придают особое значения названию своей компании или продукта. А зря. Ведь «как корабль назовешь…»<br><br> <span>Название играет важную роль в формировании имиджа</span> и дальнейшего <span class='text-color-6'>позиционирования Бренда.</span><br><br> Правильный <span>нейминг отражает философию и характер бизнеса</span>, запоминается и вызывает <span class='text-color-5'>приятные ассоциации.</span></p>"
 })  
@@ -95,7 +103,7 @@
                 <div class="scheme-item si-7-2 flex-row">
                     <div class="scheme-item-container-2 main-scheme-item">
                         <div class="number-container">
-                            <p class="number">07</p>
+                            <p style="color: #6970B1" class="number">07</p>
                         </div>
                         <div class="texts-container flex-row">
                             <p class="task">Превосходных форм</p>
@@ -114,26 +122,23 @@
         })
         <div class="options flex-col">
             @@include("./components/common-blocks/option-item.html", {
-                "background": "style='background: #6970B1'",
                 "option-text": "<p>01&nbsp;&nbsp;&nbsp;<span>легко воспринимается</span> на слух,</p>"
             }) 
             @@include("./components/common-blocks/option-item.html", {
-                "background": "style='background: #6970B1'",
                 "option-text": "<p>02&nbsp;&nbsp;&nbsp;<span>ритмично</span> звучит,</p>"
             }) 
             @@include("./components/common-blocks/option-item.html", {
-                "background": "style='background: #6970B1'",
                 "option-text": "<p>03&nbsp;&nbsp;&nbsp;хорошо <span>запоминается,</span></p>"
             }) 
             @@include("./components/common-blocks/option-item.html", {
-                "background": "style='background: #6970B1'",
                 "option-text": "<p class='special-after'>04&nbsp;&nbsp;&nbsp;<span>легко произносится</span></p>"
             }) 
         </div>
     </div>
 </section>
 
-@@include("./components/services-pages/rounded-block.html", {}) 
+@@include("./components/services-pages/rounded-block.html", {
+}) 
 @@include("./components/common-blocks/form.html", {
     "heading" : "поделитесь, где болит и "
 })  

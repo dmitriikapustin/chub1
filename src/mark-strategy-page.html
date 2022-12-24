@@ -5,6 +5,14 @@
     "service-type-svg" : "marketing-page",
     "bottom-right-text" : "<span class='span-bold'>Стратегия без тактики — это самый медленный путь к победе, тактика без стратегии — это шум перед поражением.</span><br>© Сунь Цу, древнекитайский военный стратег"
 }) 
+<style>
+    .hover-color:hover {
+        background-color: #6970B1;
+    }
+    .number {
+        color: #6970B1 !important;
+    }
+</style>
 <div class="container m-strat-container">
     @@include("./components/common-blocks/service-name.html", {
         "name" : "маркетинговая стратегия",
@@ -126,7 +134,9 @@
         </div>
     </div>
 </section>
-@@include("./components/services-pages/rounded-block.html", {}) 
+@@include("./components/services-pages/rounded-block.html", {
+
+}) 
 @@include("./components/common-blocks/form.html", {
     "heading" : "расскажите о задачах,"
 })  
