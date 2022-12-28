@@ -8,8 +8,8 @@ $(document).ready(function () {
 
         /////// FOR CARDS OF SECOND LEVEL
 
-        var cards_2 = $(".card-item");
-        var cards_2_count = cards.length;
+        var cards_2 = $(".card-item-2");
+        var cards_2_count = cards_2.length;
 
 
         /////// TRIGGERS FOR EVERY CARD
@@ -137,7 +137,7 @@ $(document).ready(function () {
         var scene = new ScrollMagic.Scene({
             offset: 200,
             triggerElement: ".team-cover-block ",
-            triggerHook: 0.5,
+            triggerHook: 0.7,
             duration: 0,
             // reverse: false
         })
@@ -163,7 +163,7 @@ $(document).ready(function () {
         })
             .setTween(tl_right_text_appearance)
             .addTo(controller_right_text_anim)
-            .addIndicators()
+            // .addIndicators()
     }
 
 
