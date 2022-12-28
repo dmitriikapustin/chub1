@@ -12,6 +12,15 @@
     .number {
         color: #6970B1 !important;
     }
+    @media screen and (min-width: 801px) { 
+    .scheme-item {
+        transition: all .3s ease-out;
+    }
+    .scheme-item:hover {
+            transition: all .3s ease-out;
+            background-color: #6970B1;
+        }
+    }
 </style>
 <div class="container m-strat-container">
     @@include("./components/common-blocks/service-name.html", {

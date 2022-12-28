@@ -601,11 +601,14 @@
         }
     }
 
-    
+
     ///////// TEAM PAGE
 
 
     .team-cover {
+        .packshot {
+            height: fill !important;
+        }
         .team-text {
             h3 {
                 font-size: $font-size-6-mob !important;
@@ -631,6 +634,9 @@
 
     .team-cover-block {
         margin-top: 40px !important;
+        .packshot {
+            height: 35.5vh !important;
+        }
         .cover {
             transform: scale(1.6) translate(-50px, 0) !important;
         }

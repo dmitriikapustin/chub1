@@ -12,6 +12,15 @@
     .number {
         color: #CD93AF !important;
     }
+    @media screen and (min-width: 801px) { 
+    .scheme-item {
+        transition: all .3s ease-out;
+    }
+    .scheme-item:hover {
+            transition: all .3s ease-out;
+            background-color: #CD93AF;
+        }
+    }
 </style>
 @@include("./components/common-blocks/block-options.html", {
     "uniqueclass" : "pr"
