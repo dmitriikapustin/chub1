@@ -55,13 +55,13 @@ $(document).ready(function () {
     
         var scene = new ScrollMagic.Scene({
             offset: 200,
-            triggerElement: ".logo-and-cards",
+            triggerElement: ".logo-block",
             triggerHook: 0.5,
             duration: 20,
             reverse: false
         })
     
-            .setClassToggle(".logo-and-cards", "default-state")
+            .setClassToggle(".logo-block", "default-state")
             .addTo(controller_team_anim_2)
             // .addIndicators()
 

@@ -116,6 +116,8 @@ function html() {
   
     watch('src/**.html', series(html)).on('change', sync.reload)
     watch('src/components/**.html', series(html)).on('change', sync.reload)
+    watch('src/components/main-pages/**.html', series(html)).on('change', sync.reload)
+    watch('src/components/common-blocks/**.html', series(html)).on('change', sync.reload)
     watch('src/styles/**.scss', series(scss)).on('change', sync.reload)
     watch('src/scripts/**.js', series(scripts)).on('change', sync.reload)
     watch('src/images', series(img)).on('change', sync.reload)

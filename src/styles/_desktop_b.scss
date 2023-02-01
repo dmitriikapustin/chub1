@@ -23,7 +23,37 @@
     .logo-and-cards {
         .cards { 
             .card-item {
-                height: 617px !important;
+                height: 617px;
+                .card-item, .card-item-2 {
+                    height: 500px;
+                    width: calc(25% - 40px);
+                    // display: flex;
+                    // align-items: flex-start;
+                }
+                .card-item-text {
+                    width: 100%;
+                    margin: 10px 20px;
+                }
+                .inna {
+                    margin: 25px 25px 25px 0;
+                }
+                .ekaterina {
+                    margin: 25px;
+                }
+                .victoria {
+                    margin: 25px;
+                }
+                .ksenia {
+                    margin: 25px 0 25px 25px;
+                }
+                .ekaterina-m {
+                    margin: 25px 25px 25px 0;
+                    width: calc(50% - 40px);
+                }
+                .ilia {
+                    margin: 25px;
+                    width: calc(50% - 40px);
+                }
             }
         }
     }

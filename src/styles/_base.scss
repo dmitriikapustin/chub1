@@ -83,7 +83,7 @@
         margin: auto auto !important;
         .svg-container {
         
-            width: 65%;
+            width: 90%;
             height: 100%;
         }
     }
@@ -93,9 +93,9 @@
     h3, p {
         font-weight: 300;
     }
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
-    background-image: url("../images/hub_new_back.jpg");
+    // height: 100vh;
+    // height: calc(var(--vh, 1vh) * 100);
+    background-image: url("../images/main-bc-chub1.jpg");
     background-size: cover;
     background-position: center;
     .container {
@@ -246,7 +246,34 @@
     .project-items {
         width: 100%;
         justify-content: space-between;
-
+        // .project-item-consul {
+        //     .description {
+        //         width: 75%;
+        //         margin: 0 16%;
+        //         span {
+        //             text-align: right;
+        //             font-size: $font-size-3;
+        //         }
+        //     }
+        // }
+        // .project-item-rein {
+        //     .description {
+        //         width: 80%;
+        //         margin: 0 16%;
+        //     }
+        // }
+        // .project-item-armia {
+        //     .description {
+        //         width: 80%;
+        //         margin: 0 15%;
+        //     }
+        // }
+        // .project-item-kirill {
+        //     .description {
+        //         width: 80%;
+        //         margin: 0 18%;
+        //     }
+        // }
         .project-item {
             width: calc(33.3333% - 5px);
             max-height: 100%;
@@ -257,12 +284,11 @@
             border-radius: 30px;
 
             .description {
-                transition: all 0.2s linear;
+                transition: all 0.1s linear;
                 opacity: 0;
                 position: absolute;
                 height: 100%;
-                width: 60%;
-                margin: 0 20%;
+                width: 100%;
                 display: flex;
                 align-items: center;
                 p {
@@ -278,14 +304,17 @@
             }
 
             &:hover:not(.text-item, .light) {
-                transition: all 0.2s linear;
+                transition: all 0.1s linear;
                 img {
-                    transform: scale(1.3);
-                    filter: blur(5px);
+                    opacity: 0;
                 }
                 .description {
-                    transition: all 0.2s linear;
-                    opacity: 1;
+                    transition: all 0.1s linear;
+                    opacity: 1 !important;
+                    img {
+                        transition: all 0.1s linear;
+                        opacity: 1 !important;
+                    }
                 }
             }
 
@@ -307,23 +336,23 @@
         .project-6 {
             position: relative;
             .project-6-hover-image {
-                transition: all ease-in 0.15s; 
+                // transition: all ease-in 0.15s; 
                 position: absolute;
-                left: -4.9%;
-                top: 4.2%;
+                left: -5%;
+                top: 3.9%;
                 z-index: 4 !important;
             }
             .project-6-image {
                 z-index: 5 !important;
             }
-            &:hover {
-                .project-6-hover-image {
-                    transition: all ease-in 0.15s; 
-                    left: 0%;
-                    top: 0%;
+            // &:hover {
+            //     .project-6-hover-image {
+            //         transition: all ease-in 0.15s; 
+            //         left: 0%;
+            //         top: 0%;
 
-                }
-            }
+            //     }
+            // }
         }
         .text-item {
             align-items: center;
@@ -633,18 +662,18 @@
             border-radius: 10px;
             margin-top: 15px;
             .description {
-                transition: all 0.2s linear;
+                transition: all 0.1s linear;
                 opacity: 0;
                 position: absolute;
                 height: 100%;
-                width: 60%;
-                margin: 0 20%;
+                width: 100%;
+                // margin: 0 20%;
                 display: flex;
                 align-items: center;
 
             }
             .img-hover {
-                transition: all 0.2s linear;
+                transition: all 0.1s linear;
                 transform: scale(1);
                 filter: none;
                 // object-fit: cover;
@@ -653,15 +682,17 @@
             }
 
             &:hover {
-                transition: all 0.2s linear;
-                .img-hover {
-                    transition: all 0.2s linear;
-                    transform: scale(1.3);
-                    filter: blur(5px);
+                transition: all 0.1s linear;
+                img {
+                    opacity: 1;
                 }
                 .description {
-                    transition: all 0.2s linear;
-                    opacity: 1;
+                    transition: all 0.1s linear;
+                    opacity: 1 !important;
+                    img {
+                        transition: all 0.1s linear;
+                        opacity: 1 !important;
+                    }
                 }
             }
         }
@@ -715,10 +746,20 @@
     }
 }
 
-
-.logo-and-cards {
+.logo-block {
+    padding-top: 200px;
+    padding-bottom: 200px;
     transition: all .6s ease-out;
-    background-color: $color_1;
+    &.default-state {
+        background-color: $color_6;
+        transition: all .6s ease-out;
+        .logo {
+            transition: all .6s ease-out;
+            svg path {
+                fill: white;
+            }
+        }
+    }
     .logo {
         transition: all .6s ease-out;
         width: 100%;
@@ -730,16 +771,14 @@
             fill: black;
         }
     }
-    &.default-state {
-        background-color: $color_6;
-        transition: all .6s ease-out;
-        .logo {
-            transition: all .6s ease-out;
-            svg path {
-                fill: white;
-            }
-        }
-    }
+}
+
+
+.logo-and-cards {
+    margin-top: 100px;
+    transition: all .6s ease-out;
+    background-color: $color_1;
+
     .cards {
         .trigger {
             position: absolute !important;
@@ -757,7 +796,8 @@
             justify-content: space-between;
         }
         .bottom-level {
-            width: 50%;
+            width: 100%;
+            justify-content: space-between;
         }
         .top-level {
             justify-content: space-between;
@@ -775,44 +815,91 @@
             // padding-right: 0;
             // opacity: 0;
             // transform: scale(0.6);
-            transition: all .6s ease-out;
+            transition: all .4s ease-out;
             background-size: cover;
             background-position: center;
             border-radius: 39px;
-            height: 500px;
-            width: calc(25% - 40px);
+            height: 500px !important;
+            width: calc(25% - 30px);
+            position: relative;
             // display: flex;
             // align-items: flex-start;
+            .hover-inna {
+                background-image: url("./images/team-inna-hover.jpg");
+            }
+            .hover-ekaterina {
+                background-image: url("./images/team-ekaterina-hover.jpg");                
+            }
+            .hover-victoria {
+                background-image: url("./images/team-victoria-hover.jpg");
+            }
+            .hover-ksenia {
+                background-image: url("./images/team-ksenia-hover.jpg");                
+            }
+            .hover-dmitrii {
+                background-image: url("./images/team-dmitrii-hover.jpg");
+            }
+            .hover-ilia {
+                background-image: url("./images/team-ilia-hover.jpg");                
+            }
+            .card-item-hover {
+                border-radius: 39px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background-size: cover;
+                background-position: center;
+                width: 100%;
+                height: 500px;
+                opacity: 0;
+                z-index: 0;
+                transition: all .4s ease-out;
+            }
+            &:hover {
+                .card-item-hover {
+                    opacity: 1 !important;
+                    z-index: 999 !important;
+                    transition: all .4s ease-out;
+                }
+            }
         }
         .card-item-text {
             width: 100%;
             margin: 10px 20px;
         }
         .inna {
-            background-image: url("./images/inna.jpg");
-            margin: 25px 25px 25px 0;
+            background-image: url("./images/team-inna.jpg");
+            margin: 25px 20px 25px 0;
         }
         .ekaterina {
-            background-image: url("./images/ekaterina.jpg");
-            margin: 25px;
+            background-image: url("./images/team-ekaterina.jpg");
+            margin: 25px 20px;
         }
         .victoria {
-            background-image: url("./images/victoria.jpg");
-            margin: 25px;
+            background-image: url("./images/team-victoria.jpg");
+            margin: 25px 20px;
         }
         .ksenia {
-            background-image: url("./images/ksenia.jpg");
-            margin: 25px 0 25px 25px;
+            background-image: url("./images/team-ksenia.jpg");
+            margin: 25px 0 25px 20px;
         }
-        .ekaterina-m {
-            background-image: url("./images/empty-card.jpg");
-            margin: 25px 25px 25px 0;
-            width: calc(50% - 40px);
+        .dmitrii {
+            background-image: url("./images/team-dmitrii.jpg");
+            margin: 25px 20px 25px 0;
         }
         .ilia {
             background-image: url("./images/empty-card.jpg");
-            margin: 25px;
-            width: calc(50% - 40px);
+            margin: 25px 20px;
+        }
+        .empty-first {
+            opacity: 0 !important;
+            pointer-events: none !important;
+            margin: 25px 20px;
+        }
+        .empty-second {
+            opacity: 0 !important;
+            pointer-events: none !important;
+            margin: 25px 0 25px 20px;
         }
 
         .card-item {
